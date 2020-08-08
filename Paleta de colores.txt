@@ -5,8 +5,10 @@ F7 B0 31
 Estructura CSS
 
 selector {
+	*(contenido del pseudo elemento)
 	estilos individuales;
-	posicionamiento con flexbox;
 	posicionamiento con position;
+	posicionamiento con flexbox;
 	modificacion de anchura
+	transiciones
 }
