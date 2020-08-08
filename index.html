@@ -14,10 +14,13 @@
 </head>
 <body>
     <main>
-        <div class="wrapper_main">
+        <div class="wrapper_header">
             <header class="header">
-                <h1 class="main_title"><a href="#">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
-                <nav class="bar_navigation">
+                <div id="container_menu" class="container_menu">
+                    <h1 class="main_title"><a href="#">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
+                    <div id="btn_menu" class="btn_menu"><i class="las la-bars"></i></div>
+                </div>
+                <nav id="bar_navigation" class="bar_navigation">
                     <ul>
                         <li><a href="#" class="current_item"><i class="las la-home"></i> Home</a></li>
                         <li><a href="#"><i class="lar la-user"></i> About me</a></li>
@@ -27,10 +30,11 @@
                     </ul>
                 </nav>
             </header>
-            <div class="main_info">
-                <p>Hello, my name is Jaime Navarrete</p>
+            <div class="initial_info">
+                <strong>Hello, my name is Jaime Navarrete</strong>
                 <h2>Frontend & Backend Developer</h2>
                 <p>I’m enthusiastic about web development, ready to learn new technologies and continue improving my current skills. I do my work with effort, passion, innovation and efficiency.</p>
+                <a href="#" class="btn_contact">Contact me</a>
             </div>
         </div>
     </main>

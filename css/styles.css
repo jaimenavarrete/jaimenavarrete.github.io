@@ -1,53 +1,182 @@
-/**************** HEADER AND MAIN INFORMATION ***************/
-
-.wrapper_main {
-    background-image: url(../img/main_img.jpg);
+html {
+    font-size: 12px;
 }
+
+body {
+    background: hsl(0,0%,17%);
+}
+
+/*
+The header wrapper contains the navigation bar 
+and the initial information and image
+*/
+
+.wrapper_header {
+    background-image: url(../img/main_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.wrapper_header::before {
+    content: '';
+
+    background: hsla(0,0%,0%,.6);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/**********************************
+ ************* HEADER *************
+ **********************************/
+
 
 .header {
     margin: 0 auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    max-width: 75em;
+    max-width: 75rem;
     width: 100%;
 }
 
 .header a {
     color: hsl(0, 0%, 95%);
-    font-size: 1.25em;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
-.header .main_title {
-    font-family: 'Crimson Text';
-    font-size: 1.88em;
+.header .container_menu {
+    color: #fff;
+    font-size: 2.5em;
+    padding-top: 1rem;
+
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: .2s all ease-out;
 }
 
-.header .bar_navigation ul {
-    list-style: none;
+
+/********** THE LOGO-NAME **********/
+
+.header .main_title {
+    margin: 0;
+    padding: 0 .5rem;
 
     display: flex;
 }
 
+.header .main_title a {
+    font-family: 'Crimson Text';
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.header .main_title span {
+    color: hsl(43, 97%, 61%);
+    font-weight: bold;
+}
+
+/********** THE NAVIGATION BAR **********/
+
+.header .bar_navigation {
+    background: hsl(0,0%,17%);
+
+    position: fixed;
+    top: 7.1%;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+
+    transition: .2s ease-out;
+}
+
+.header .active {
+    left: 50%;
+}
+
+.header .bar_navigation ul {
+    list-style: none;
+    padding: 1rem;
+}
+
 .header .bar_navigation ul li {
     font-family: 'Work Sans';
-    margin-right: 40px;
     list-style: none;
 }
 
-.header .bar_navigation ul li:last-child {
-    margin-right: 0;
+.header .bar_navigation ul li a {
+    border: 4px solid transparent;
+    display: block;
+    padding: 1.5rem 0.62rem;
+
+    transition: .1s ease-out;
+}
+
+.header .bar_navigation ul li a:hover {
+    border: 4px solid hsl(43, 97%, 61%);
 }
 
 .header .bar_navigation ul li .current_item {
-    border: 4px solid transparent;
     border-bottom-color: hsl(43, 97%, 61%);
-    padding: 0.62em;
 }
 
-.header .bar_navigation ul li .current_item:hover {
-    border: 4px solid hsl(43, 97%, 61%);
+
+/***********************************
+ ******* INITIAL INFORMATION *******
+ ***********************************/
+
+.initial_info {
+    color: hsl(0,0%,95%);
+    font-family: 'Work Sans';
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 7.5rem 0;
+    text-align: center;
+    line-height: 1.5;
+
+    max-width: 75rem;
+    width: 90%;
+} 
+
+.initial_info strong {
+    font-weight: normal;
+}
+
+.initial_info h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    padding: .25em 0;
+}
+
+.initial_info p {
+    padding-bottom: 2.5em;
+}
+
+.initial_info .btn_contact {
+    background: hsl(43, 97%, 61%);
+    border: 3px solid hsl(43, 97%, 38%);
+    color: hsl(0,0%,17%);
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: .75rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1250px) {
+    .wrapper_header {
+        background-position: 50% 55%;
+    }
 }

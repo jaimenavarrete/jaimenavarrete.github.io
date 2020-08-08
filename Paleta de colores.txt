@@ -1,3 +1,12 @@
 F7 B0 31
 00 B7 FF
 44 52 6F
+
+Estructura CSS
+
+selector {
+	estilos individuales;
+	posicionamiento con flexbox;
+	posicionamiento con position;
+	modificacion de anchura
+}
