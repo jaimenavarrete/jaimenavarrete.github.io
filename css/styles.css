@@ -1,5 +1,5 @@
 html {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 body {
@@ -40,6 +40,8 @@ and the initial information and image
 
 .main_header {
     position: fixed;
+
+    transition: .2s all ease-out;
 
     width: 100%;
 }
@@ -87,7 +89,7 @@ and the initial information and image
 /********** THE NAVIGATION BAR **********/
 
 .main_header .bar_navigation {
-    background: hsl(0,0%,17%);
+    background: hsl(0, 0%, 5%);
     font-size: 1.3rem;
     height: 100vh;
     width: 100%;
@@ -135,26 +137,29 @@ and the initial information and image
     font-family: 'Work Sans';
     font-size: 1.5rem;
     margin: 0 auto;
-    padding: 7.5rem 0;
+    padding: 7.5rem 0 3rem 0;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.6;
 
     max-width: 75rem;
     width: 95%;
 } 
 
 .initial_info strong {
+    border-bottom: 3px solid hsl(43, 97%, 61%);
     font-weight: normal;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 .initial_info h2 {
+    font-family: 'Crimson Text';
     font-size: 4rem;
-    font-weight: normal;
     margin: 1.75rem;
 }
 
 .initial_info p {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .initial_info .btn_contact {
@@ -195,8 +200,8 @@ and the initial information and image
     border-bottom: 4px solid hsl(43, 97%, 61%);
     color: hsl(43, 97%, 61%);
     font-size: 2.5rem;
-    margin: 5rem 0;
-    padding-bottom: .5rem;
+    margin: 5rem 0 2.5rem 0;
+    padding: 0 1rem .5rem 1rem;
     text-transform: uppercase;
 
     display: flex;
@@ -204,9 +209,68 @@ and the initial information and image
     align-items: center;
 }
 
-.sections .section_title h3 {
+.sections .section_title h2 {
     font-size: 2.25rem;
     margin: 0;
+}
+
+.sections .articles {
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+}
+
+
+/**********************************
+ ************ ABOUT ME ************
+ **********************************/
+
+.sections .articles .article_title {
+    color: hsl(43, 97%, 61%);
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.sections .articles p {
+    font-family: 'Work Sans', sans-serif, helvetica, arial;
+    line-height: 1.7;
+}
+
+.sections .articles p {
+    padding: 0 1rem;
+}
+
+.sections .articles span {
+    color: hsl(43, 97%, 61%);
+    font-weight: bold;
+}
+
+.sections .articles .btn_contact {
+    background: transparent;
+    border: 3px solid hsl(43, 97%, 61%);
+    color: hsl(43, 97%, 61%);
+    font-weight: bold;
+    padding: .75rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sections .articles .services {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.sections .articles .services h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sections .articles .services figure i {
+    background: hsl(43, 97%, 61%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 17%);
+    font-size: 5rem;
+    padding: 1rem;
 }
 
 
@@ -227,6 +291,22 @@ and the initial information and image
 /***********************************
  ********** MEDIA QUERIES **********
  ***********************************/
+
+@media screen and (min-width: 768px) {
+    .sections .articles .services_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sections .articles .services {
+        width: 50%;
+    }
+
+    .sections .articles .services:nth-child(3),
+    .sections .articles .services:nth-child(4) {
+        margin-bottom: 0;
+    }
+}
 
 
 @media screen and (min-width: 1075px) {
@@ -292,6 +372,27 @@ and the initial information and image
     .initial_info h2 {
         margin: 4rem 0;
     }
+
+    /**********************************
+    ************ ABOUT ME ************
+    **********************************/
+
+    .sections .articles {
+        font-size: 1.15rem;
+        margin-bottom: 0;
+    }
+
+    .sections .personal_info {
+        display: flex;
+    }
+
+    .sections .personal_info h3 {
+        text-align-last: left;
+    }
+
+    .sections .personal_info p {
+        padding: 0;
+    }
 }
 
 
@@ -303,4 +404,25 @@ and the initial information and image
     .initial_info {
         padding: 7.5rem 0;
     } 
+
+    /**********************************
+    ************ ABOUT ME ************
+    **********************************/
+
+    .sections .articles {
+        font-size: 1rem;
+    }
+
+    .sections .articles .services_container {
+        justify-content: center;
+    }
+
+    .sections .articles .services {
+        margin-bottom: 1rem;
+        width: 33%;
+    }
+
+    .sections .articles .services:last-child {
+        margin-bottom: 0;
+    }
 }

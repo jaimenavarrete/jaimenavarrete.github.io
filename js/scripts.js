@@ -8,7 +8,7 @@ btnMenu.addEventListener('click', () => {
 
 addEventListener('scroll', () => {
     if(scrollY >= 40) {
-        header.style.background = 'hsl(0,0%,17%)'
+        header.style.background = 'hsl(0,0%,5%)'
     }
     else {
         header.style.background = 'transparent'
