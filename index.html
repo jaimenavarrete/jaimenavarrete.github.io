@@ -18,7 +18,7 @@
     <main>
         <!-- Header and initial info -->
 
-        <div class="wrapper_header">
+        <div id="home" class="wrapper_header">
             <header id="main_header" class="main_header">
                 <div id="container_menu" class="container_menu">
                     <h1 class="main_title"><a href="#">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
@@ -26,25 +26,25 @@
                 </div>
                 <nav id="bar_navigation" class="bar_navigation">
                     <ul>
-                        <li><a href="#" class="current_item"><i class="las la-home"></i> Home</a></li>
-                        <li><a href="#"><i class="lar la-user"></i> About me</a></li>
-                        <li><a href="#"><i class="las la-address-book"></i> Resume</a></li>
-                        <li><a href="#"><i class="las la-briefcase"></i> Portfolio</a></li>
-                        <li><a href="#"><i class="lar la-envelope"></i> Contact</a></li>
+                        <li><a href="#home" class="current_item"><i class="las la-home"></i> Home</a></li>
+                        <li><a href="#about_me"><i class="lar la-user"></i> About me</a></li>
+                        <li><a href="#resume"><i class="las la-address-book"></i> Resume</a></li>
+                        <li><a href="#portfolio"><i class="las la-briefcase"></i> Portfolio</a></li>
+                        <li><a href="#contact"><i class="lar la-envelope"></i> Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="initial_info">
                 <strong>Hello, my name is Jaime Navarrete</strong>
                 <h2>Frontend & Backend Developer</h2>
-                <p>I’m enthusiastic about web development, ready to learn new technologies and continue improving my current skills. I do my work with effort, passion, innovation and efficiency.</p>
-                <button href="#" class="btn_contact">Contact me</button>
+                <p id="info">I’m enthusiastic about web development, ready to learn new technologies and continue improving my current skills. I do my work with effort, passion, innovation and efficiency.</p>
+                <button id="contactButton" class="btn_contact">Contact me</button>
             </div>
         </div>
 
         <!-- Main content -->
     
-        <section class="sections">
+        <section id="about_me" class="sections">
             <div class="section_title">
                 <h2>About me</h2>
                 <i class="lar la-user"></i>
@@ -106,38 +106,92 @@
         </section>
         
 
-        <section class="sections">
-            <div class="section_title">
-                <h2>Resume</h2>
-                <i class="lar la-user"></i>
-            </div>
+        <div class="container_resume">
+            <section id="resume" class="sections">
+                <div class="section_title">
+                    <h2>Resume</h2>
+                    <i class="lar la-user"></i>
+                </div>
 
-            <article class="articles">
+                <div class="chronologies_container">
+                    <article class="articles">
+                        <h3 class="article_title">Education</h3>
 
-            </article>
-        </section>
+                        <div class="chronologies">
+                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                        <div class="chronologies">
+                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                        <div class="chronologies">
+                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                    </article>
+
+                    <!-- <article class="articles">
+                        <h3 class="article_title">Experience</h3>
+
+                        <div class="chronologies">
+                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                        <div class="chronologies">
+                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                        <div class="chronologies">
+                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+        </div>
 
 
-        <section class="sections">
-            <div class="section_title">
-                <h2>Portfolio</h2>
-                <i class="lar la-user"></i>
-            </div>
+        <div class="container_portfolio">
+            <section id="portfolio" class="sections">
+                <div class="section_title">
+                    <h2>Portfolio</h2>
+                    <i class="lar la-user"></i>
+                </div>
+    
+                <article class="articles">
+    
+                </article>
+            </section>
+        </div>
 
-            <article class="articles">
 
-            </article>
-        </section>
-
-
-        <section class="sections">
+        <section id="contact" class="sections">
             <div class="section_title">
                 <h2>Contact</h2>
                 <i class="lar la-user"></i>
             </div>
 
             <article class="articles">
-
+                <h3 class="article_title">Personal information</h3>
             </article>
         </section>
 

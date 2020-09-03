@@ -2,8 +2,12 @@ html {
     font-size: 13px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: hsl(0,0%,17%);
+    background: hsl(0, 0%, 17%);
 }
 
 /*
@@ -74,7 +78,7 @@ and the initial information and image
 }
 
 .main_header .main_title a {
-    font-family: 'Crimson Text';
+    font-family: 'Crimson Text', sans-serif, Helvetica, Arial;
     font-size: 2rem;
     font-weight: normal;
     padding: 1rem 0;
@@ -153,13 +157,18 @@ and the initial information and image
 }
 
 .initial_info h2 {
-    font-family: 'Crimson Text';
+    font-family: 'Crimson Text', sans-serif, Helvetica, Arial;
     font-size: 4rem;
     margin: 1.75rem;
 }
 
 .initial_info p {
+    /* display: none; */
+    opacity: 0;
     padding-bottom: 2em;
+    transform: translateY(-100%);
+
+    transition: .2s all ease-out;
 }
 
 .initial_info .btn_contact {
@@ -167,6 +176,7 @@ and the initial information and image
     /* border: 3px solid hsl(43, 97%, 38%); */
     border: 3px solid hsl(43, 97%, 61%);
     color: hsl(0,0%,17%);
+    cursor: pointer;
     font-size: 1.25rem;
     font-weight: bold;
     padding: .75rem 3rem;
@@ -215,7 +225,6 @@ and the initial information and image
 }
 
 .sections .articles {
-    font-size: 1.25rem;
     margin-bottom: 4rem;
 }
 
@@ -234,9 +243,6 @@ and the initial information and image
 .sections .articles p {
     font-family: 'Work Sans', sans-serif, helvetica, arial;
     line-height: 1.7;
-}
-
-.sections .articles p {
     padding: 0 1rem;
 }
 
@@ -249,6 +255,7 @@ and the initial information and image
     background: transparent;
     border: 3px solid hsl(43, 97%, 61%);
     color: hsl(43, 97%, 61%);
+    cursor: pointer;
     font-weight: bold;
     padding: .75rem 3rem;
     text-decoration: none;
@@ -271,6 +278,82 @@ and the initial information and image
     color: hsl(0, 0%, 17%);
     font-size: 5rem;
     padding: 1rem;
+}
+
+
+/**********************************
+ ************* RESUME *************
+ **********************************/
+
+.container_resume {
+    background: hsl(0, 0%, 11%);
+    padding: .5rem 0;
+}
+
+.container_resume .chronologies_container {
+    display: flex;
+    justify-content: center;
+}
+
+.container_resume .chronologies {
+    border-left: 3px solid hsl(43, 97%, 61%);
+    padding-left: 4rem;
+    margin: 0 0 4rem 3rem;
+    max-width: 540px;
+    
+    position: relative;
+}
+
+.container_resume .chronologies::before,
+.container_resume .chronologies::after {
+    content: '';
+
+    border: 3px solid hsl(43, 97%, 61%);
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    margin-left: -10px;
+    width: 10px;
+
+    position: absolute;
+    left: 0;
+    top: -13px;
+}
+
+.container_resume .chronologies::after {
+    top: 100%;
+}
+
+.container_resume .chronologies figure {
+    margin: 0;
+
+    position: absolute;
+    left: -47px;
+    top: 2.5rem;
+}
+
+.container_resume .chronologies img {
+    border-radius: 50%;
+    width: 90px;
+}
+
+.container_resume .chronologies h4 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+}
+
+.container_resume .chronologies em {
+    color: hsl(43, 97%, 61%);
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-style: normal;
+}
+
+.container_resume .chronologies p {
+    padding: 0;
 }
 
 
@@ -302,10 +385,26 @@ and the initial information and image
         width: 50%;
     }
 
-    .sections .articles .services:nth-child(3),
-    .sections .articles .services:nth-child(4) {
+    .sections .articles {
+        font-size: 1.15rem;
         margin-bottom: 0;
     }
+
+    /**********************************
+    ************* RESUME *************
+    **********************************/
+
+    /* This styles are created if there are 2 or more columns in resume container */
+
+    /* 
+    .container_resume .chronologies_container {
+        justify-content: space-between;
+    }
+    
+    .container_resume .chronologies_container .articles {
+        width: 45%;
+    }
+    */
 }
 
 
@@ -373,14 +472,11 @@ and the initial information and image
         margin: 4rem 0;
     }
 
+
     /**********************************
     ************ ABOUT ME ************
     **********************************/
 
-    .sections .articles {
-        font-size: 1.15rem;
-        margin-bottom: 0;
-    }
 
     .sections .personal_info {
         display: flex;
@@ -423,6 +519,19 @@ and the initial information and image
     }
 
     .sections .articles .services:last-child {
-        margin-bottom: 0;
+        margin-bottom: 3em;
+    }
+
+
+    /**********************************
+    ************* RESUME *************
+    **********************************/
+
+    .sections .articles .chronologies h4 {
+        font-size: 1.6rem;
+    }
+
+    .sections .articles .chronologies em {
+        font-size: 1.25rem;
     }
 }
