@@ -9,10 +9,10 @@
     <!-- Font Awesome - Line Awesome -->
     <!-- <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -21,7 +21,7 @@
         <div id="home" class="wrapper_header">
             <header id="main_header" class="main_header">
                 <div id="container_menu" class="container_menu">
-                    <h1 class="main_title"><a href="#">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
+                    <h1 class="main_title"><a href="#home">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
                     <span id="btn_menu" class="btn_menu"><i class="las la-bars"></i></span>
                 </div>
                 <nav id="bar_navigation" class="bar_navigation">
@@ -38,7 +38,7 @@
                 <strong>Hello, my name is Jaime Navarrete</strong>
                 <h2>Frontend & Backend Developer</h2>
                 <p id="info">I’m enthusiastic about web development, ready to learn new technologies and continue improving my current skills. I do my work with effort, passion, innovation and efficiency.</p>
-                <button id="contactButton" class="btn_contact">Contact me</button>
+                <a href="#contact" id="contactButton" class="btn_contact">Contact me</a>
             </div>
         </div>
 
@@ -110,7 +110,7 @@
             <section id="resume" class="sections">
                 <div class="section_title">
                     <h2>Resume</h2>
-                    <i class="lar la-user"></i>
+                    <i class="las la-address-book"></i>
                 </div>
 
                 <div class="chronologies_container">
@@ -118,24 +118,21 @@
                         <h3 class="article_title">Education</h3>
 
                         <div class="chronologies">
-                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
-                            <h4>Computer Science Engineering</h4>
-                            <em>Universidad Don Bosco, El Salvador</em>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                        </div>
-                        <div class="chronologies">
-                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <figure><img src="img/resume/education/logoUDB.jpg" alt="Logo UDB"></figure>
                             <h4>Computer Science Engineering</h4>
                             <em>Universidad Don Bosco, El Salvador</em>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
                         </div>
                         <div class="chronologies">
-                            <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <figure><img src="img/resume/education/logoUDB.jpg" alt="Logo UDB"></figure>
                             <h4>Computer Science Engineering</h4>
                             <em>Universidad Don Bosco, El Salvador</em>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        </div>
+                        <div class="chronologies">
+                            <figure><img src="img/resume/education/logoUDB.jpg" alt="Logo UDB"></figure>
+                            <h4>Computer Science Engineering</h4>
+                            <em>Universidad Don Bosco, El Salvador</em>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
                         </div>
                     </article>
@@ -148,7 +145,6 @@
                             <h4>Computer Science Engineering</h4>
                             <em>Universidad Don Bosco, El Salvador</em>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
                         </div>
                         <div class="chronologies">
                             <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
@@ -160,12 +156,93 @@
                             <figure><img src="img/resume/logoUDB.jpg" alt="Logo UDB"></figure>
                             <h4>Computer Science Engineering</h4>
                             <em>Universidad Don Bosco, El Salvador</em>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
                         </div>
                     </article> -->
                 </div>
+                <article class="articles">
+                    <h3 class="article_title">Skills</h3>
+                    <div class="container_skills">
+                        <div class="skills">
+                            <header>
+                                <i class="las la-code"></i>
+                                <h4>Frontend Skills</h4>
+                            </header>
+                            <div class="skills_content">
+                                <h5>Languages</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+    
+                            <div class="skills_content">
+                                <h5>Frameworks</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+    
+                            <div class="skills_content">
+                                <h5>Libraries</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <header>
+                                <i class="las la-server"></i>
+                                <h4>Backend Skills</h4>
+                            </header>
+                            <div class="skills_content">
+                                <h5>Languages</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+    
+                            <div class="skills_content">
+                                <h5>Frameworks</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+    
+                            <div class="skills_content">
+                                <h5>Libraries</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <header>
+                                <i class="lab la-trello"></i>
+                                <h4>Other Skills</h4>
+                            </header>
+                            <div class="skills_content">
+                                <h5>Languages</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+    
+                            <div class="skills_content">
+                                <h5>Frameworks</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+    
+                            <div class="skills_content">
+                                <h5>Libraries</h5>
+                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </section>
         </div>
 
@@ -174,11 +251,11 @@
             <section id="portfolio" class="sections">
                 <div class="section_title">
                     <h2>Portfolio</h2>
-                    <i class="lar la-user"></i>
+                    <i class="las la-briefcase"></i>
                 </div>
     
                 <article class="articles">
-    
+                    
                 </article>
             </section>
         </div>
@@ -187,11 +264,11 @@
         <section id="contact" class="sections">
             <div class="section_title">
                 <h2>Contact</h2>
-                <i class="lar la-user"></i>
+                <i class="lar la-envelope"></i>
             </div>
 
             <article class="articles">
-                <h3 class="article_title">Personal information</h3>
+                <!-- <h3 class="article_title">Personal information</h3> -->
             </article>
         </section>
 

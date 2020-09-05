@@ -4,6 +4,21 @@ const btnMenu = document.getElementById('btn_menu'),
       contactButton = document.getElementById('contactButton'),
       info = document.getElementById('info')
 
+// INITIAL EFFECTS ON THE PAGE
+
+addEventListener('DOMContentLoaded', () => {
+    // Initial effects on header
+    setTimeout(() => document.styleSheets[3].addRule('.wrapper_header::before', 'background: hsla(0,0%,0%,.6)'), 500)
+
+    // Initial effects on initial info
+    let initial = document.querySelector('.initial_info')
+    setTimeout(() => {
+        initial.style.opacity = '1'
+        initial.style.transform = 'translateY(0)'
+    }, 1000)
+})
+
+// Activate or desactivate the navigation bar with click on the hamburger button
 btnMenu.addEventListener('click', () => {
     barNavigation.classList.toggle('bar_navigation_active')
 })

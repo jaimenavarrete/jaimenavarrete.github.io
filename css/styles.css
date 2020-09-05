@@ -1,5 +1,5 @@
 html {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 * {
@@ -17,25 +17,25 @@ and the initial information and image
 
 .wrapper_header {
     background-image: url(../img/main_img.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 .wrapper_header::before {
     content: '';
 
-    background: hsla(0,0%,0%,.65);
+    background: hsla(0,0%,11%,1);
     height: 100%;
     width: 100%;
+    transition: .2s all ease-out;
     z-index: -1;
 
     position: absolute;
     left: 0;
     top: 0;
 }
-
 
 /**********************************
  ************* HEADER *************
@@ -44,6 +44,7 @@ and the initial information and image
 
 .main_header {
     position: fixed;
+    z-index: 1;
 
     transition: .2s all ease-out;
 
@@ -63,6 +64,7 @@ and the initial information and image
     margin: 0 auto;
     padding: .5rem 0;
     width: 95%;
+    z-index: 1000;
 
     display: flex;
     justify-content: space-between;
@@ -140,10 +142,14 @@ and the initial information and image
     color: hsl(0,0%,95%);
     font-family: 'Work Sans';
     font-size: 1.5rem;
+    line-height: 1.6;
     margin: 0 auto;
     padding: 7.5rem 0 3rem 0;
     text-align: center;
-    line-height: 1.6;
+
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .2s all ease-out;
 
     max-width: 75rem;
     width: 95%;
@@ -182,6 +188,7 @@ and the initial information and image
     padding: .75rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .2s all ease-out;
 }
 
 .initial_info .btn_contact:hover {
@@ -225,7 +232,7 @@ and the initial information and image
 }
 
 .sections .articles {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -260,6 +267,12 @@ and the initial information and image
     padding: .75rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
+    transition: .2s all ease-out;
+}
+
+.sections .articles .btn_contact:hover {
+    background: hsl(43, 97%, 61%);
+    color: hsl(0, 0%, 17%);
 }
 
 .sections .articles .services {
@@ -272,7 +285,8 @@ and the initial information and image
     margin-bottom: 1rem;
 }
 
-.sections .articles .services figure i {
+.sections .articles .services figure i,
+.container_resume .skills i {
     background: hsl(43, 97%, 61%);
     border-radius: 50%;
     color: hsl(0, 0%, 17%);
@@ -284,6 +298,9 @@ and the initial information and image
 /**********************************
  ************* RESUME *************
  **********************************/
+
+
+/* EDUCATION AND EXPERIENCE */
 
 .container_resume {
     background: hsl(0, 0%, 11%);
@@ -356,6 +373,65 @@ and the initial information and image
     padding: 0;
 }
 
+/* SKILLS */
+
+.container_resume .skills {
+    background: hsl(0,0%, 17%);
+    box-shadow: 2px 2px 2px hsl(0, 0%, 30%);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+
+    max-width: 375px;
+}
+
+.container_resume .skills h4 {
+    color: hsl(43, 97%, 66%);
+    font-size: 1.75rem;
+}
+
+.container_resume .skills h5 {
+    color: hsl(43, 97%, 76%);
+    font-family: 'Work Sans', sans-serif, helvetica, arial;
+    font-size: 1.25rem;
+    margin: 1.5rem 0 .5rem 0;
+}
+
+.container_resume .skills figure {
+    border-bottom: 2px solid hsl(0, 0%, 23%); 
+    margin: 0;
+    padding: .25rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_resume .skills figure img {
+    width: 35px;
+}
+
+.container_resume .skills figure p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+
+/**********************************
+ *********** PORTFOLIO ************
+ **********************************/
+
+
+.container_portfolio {
+    background: hsl(0, 0%, 85%);
+    padding: .5rem 0;
+}
+
+.container_portfolio .section_title {
+    color: hsl(0, 0%, 11%);
+    border-color: hsl(0, 0%, 11%);
+}
+
 
 /**********************************
  ************* FOOTER *************
@@ -405,12 +481,24 @@ and the initial information and image
         width: 45%;
     }
     */
+
+    /* SKILLS */
+
+    .container_resume .container_skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container_resume .container_skills .skills {
+        max-width: 100%;
+        width: 45%;
+    }
 }
 
 
 @media screen and (min-width: 1075px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     /*
@@ -477,6 +565,9 @@ and the initial information and image
     ************ ABOUT ME ************
     **********************************/
 
+    .sections .articles {
+        font-size: 1rem;
+    }
 
     .sections .personal_info {
         display: flex;
@@ -505,10 +596,6 @@ and the initial information and image
     ************ ABOUT ME ************
     **********************************/
 
-    .sections .articles {
-        font-size: 1rem;
-    }
-
     .sections .articles .services_container {
         justify-content: center;
     }
@@ -524,14 +611,17 @@ and the initial information and image
 
 
     /**********************************
-    ************* RESUME *************
+    ************* RESUME **************
     **********************************/
 
-    .sections .articles .chronologies h4 {
-        font-size: 1.6rem;
+
+    /* SKILLS */
+
+    .container_resume .container_skills {
+        justify-content: space-between;
     }
 
-    .sections .articles .chronologies em {
-        font-size: 1.25rem;
+    .container_resume .container_skills .skills {
+        width: 31%;
     }
 }
