@@ -157,7 +157,7 @@ and the initial information and image
 
 .initial_info strong {
     border-bottom: 3px solid hsl(43, 97%, 61%);
-    font-weight: normal;
+    font-weight: bold;
     padding-bottom: .5rem;
     margin-bottom: .5rem;
 }
@@ -170,6 +170,7 @@ and the initial information and image
 
 .initial_info p {
     /* display: none; */
+    font-size: 1.25rem;
     opacity: 0;
     padding-bottom: 2em;
     transform: translateY(-100%);
@@ -179,10 +180,10 @@ and the initial information and image
 
 .initial_info .btn_contact {
     background: hsl(43, 97%, 61%);
-    /* border: 3px solid hsl(43, 97%, 38%); */
     border: 3px solid hsl(43, 97%, 61%);
     color: hsl(0,0%,17%);
     cursor: pointer;
+    display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
     padding: .75rem 3rem;
@@ -263,6 +264,7 @@ and the initial information and image
     border: 3px solid hsl(43, 97%, 61%);
     color: hsl(43, 97%, 61%);
     cursor: pointer;
+    display: inline-block;
     font-weight: bold;
     padding: .75rem 3rem;
     text-decoration: none;
@@ -375,18 +377,21 @@ and the initial information and image
 
 /* SKILLS */
 
-.container_resume .skills {
+.container_resume .skills,
+.container_portfolio .projects {
     background: hsl(0,0%, 17%);
     box-shadow: 2px 2px 2px hsl(0, 0%, 30%);
+    font-family: 'Crimson Text', sans-serif, Helvetica, Arial;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding: 2.5rem;
     text-align: center;
 
     max-width: 375px;
 }
 
-.container_resume .skills h4 {
+.container_resume .skills h4,
+.container_portfolio .projects h4 {
     color: hsl(43, 97%, 66%);
     font-size: 1.75rem;
 }
@@ -431,6 +436,105 @@ and the initial information and image
     color: hsl(0, 0%, 11%);
     border-color: hsl(0, 0%, 11%);
 }
+
+.container_portfolio .projects {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 11%);
+    padding: 0;
+}
+
+.container_portfolio .projects h3,
+.container_portfolio .projects h4 {
+    color: hsl(0, 0%, 11%);
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+.container_portfolio .projects h4 {
+    color: hsl(0, 0%, 27%);
+    font-size: 1.25rem;
+}
+
+.container_portfolio .projects_img img {
+    border-bottom: 2px solid hsl(0, 0%, 90%);
+    height: 225px;
+    width: 100%;
+}
+
+.container_portfolio .projects_technologies {
+    margin: 2rem;
+}
+
+.container_portfolio .projects_technologies img {
+    width: 35px;
+}
+
+.container_portfolio .projects_buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_portfolio .projects_buttons a {
+    border: 3px solid hsl(43, 97%, 38%);
+    color: hsl(43, 97%, 38%);
+    font-family: 'Work Sans', sans-serif, helvetica, arial;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container_portfolio .projects_buttons .main {
+    background: hsl(43, 97%, 61%);
+    color: hsl(0, 0%, 17%);
+}
+
+
+/**********************************
+ ************ CONTACT *************
+ **********************************/
+
+.social_networks {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.social_networks a {
+    border: 3px solid hsl(43, 97%, 71%);
+    color: hsl(43, 97%, 71%);
+    display: inline-block;
+    margin-right: 1rem;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+
+    transition: .2s ease-out all;
+}
+
+.social_networks a i {
+    font-size: 3rem;
+}
+
+.social_networks .linkedin:hover {
+    color: hsl(0, 0%, 100%);
+    background: hsl(201, 98%, 35%);
+}
+.social_networks .github:hover {
+    color: hsl(0, 1%, 19%);
+    background: hsl(0, 0%, 97%);
+}
+.social_networks .facebook:hover {
+    color: hsl(0, 0%, 100%);
+    background: hsl(214, 83%, 50%);
+}
+.social_networks .twitter:hover {
+    color: hsl(0, 0%, 100%);
+    background: hsl(203, 83%, 51%);
+}
+
 
 
 /**********************************
@@ -484,12 +588,14 @@ and the initial information and image
 
     /* SKILLS */
 
-    .container_resume .container_skills {
+    .container_resume .container_skills,
+    .container_portfolio .container_projects {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .container_resume .container_skills .skills {
+    .container_resume .container_skills .skills,
+    .container_portfolio .container_projects .projects {
         max-width: 100%;
         width: 45%;
     }
@@ -617,11 +723,13 @@ and the initial information and image
 
     /* SKILLS */
 
-    .container_resume .container_skills {
+    .container_resume .container_skills,
+    .container_portfolio .container_projects {
         justify-content: space-between;
     }
 
-    .container_resume .container_skills .skills {
+    .container_resume .container_skills .skills,
+    .container_portfolio .container_projects .projects {
         width: 31%;
     }
 }
