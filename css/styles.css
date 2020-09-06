@@ -178,7 +178,8 @@ and the initial information and image
     transition: .2s all ease-out;
 }
 
-.initial_info .btn_contact {
+.initial_info .btn_contact,
+.contact_form .form_input input[type="submit"] {
     background: hsl(43, 97%, 61%);
     border: 3px solid hsl(43, 97%, 61%);
     color: hsl(0,0%,17%);
@@ -192,11 +193,13 @@ and the initial information and image
     transition: .2s all ease-out;
 }
 
-.initial_info .btn_contact:hover {
+.initial_info .btn_contact:hover,
+.contact_form .form_input input[type="submit"]:hover {
     border-color: hsl(43, 97%, 38%);
 }
 
-.initial_info .btn_contact:active {
+.initial_info .btn_contact:active,
+.contact_form .form_input input[type="submit"]:active {
     background: hsl(43, 97%, 38%);
 }
 
@@ -233,7 +236,7 @@ and the initial information and image
 }
 
 .sections .articles {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -323,6 +326,10 @@ and the initial information and image
     position: relative;
 }
 
+.container_resume .chronologies:last-child {
+    margin-bottom: 0;
+}
+
 .container_resume .chronologies::before,
 .container_resume .chronologies::after {
     content: '';
@@ -383,7 +390,7 @@ and the initial information and image
     box-shadow: 2px 2px 2px hsl(0, 0%, 30%);
     font-family: 'Crimson Text', sans-serif, Helvetica, Arial;
     margin: 0 auto;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     padding: 2.5rem;
     text-align: center;
 
@@ -497,14 +504,17 @@ and the initial information and image
  ************ CONTACT *************
  **********************************/
 
+
+/* SOCIAL NETWORKS */
+
 .social_networks {
     margin-bottom: 5rem;
     text-align: center;
 }
 
 .social_networks a {
-    border: 3px solid hsl(43, 97%, 71%);
-    color: hsl(43, 97%, 71%);
+    border: 3px solid hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 90%);
     display: inline-block;
     margin-right: 1rem;
     padding: .5rem;
@@ -535,6 +545,59 @@ and the initial information and image
     background: hsl(203, 83%, 51%);
 }
 
+/* CONTACT FORM */
+
+.contact_form {
+    font-family: 'Work Sans', sans-serif, helvetica, arial;
+    margin: 0 auto 4rem auto;
+
+    max-width: 700px;
+    width: 100%;
+}
+
+.contact_form .form_input {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.contact_form .form_input input,
+.contact_form .form_input textarea {
+    background: transparent;
+    border: 3px solid hsl(0, 0%, 65%);
+    color: hsl(0, 0%, 95%);
+    font-size: 1.25rem;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+
+    transition: .2s ease-out all;
+}
+
+.contact_form .form_input textarea {
+    resize: none;
+}
+
+.contact_form .form_input input:focus,
+.contact_form .form_input textarea:focus {
+    border-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 4px hsl(0, 0%, 100%);
+}
+
+.contact_form .form_input input::placeholder,
+.contact_form .form_input textarea::placeholder {
+    color: hsl(0, 0%, 65%);
+}
+
+.contact_form .form_input input[type="submit"] {
+    max-width: 235px;
+    padding: .75rem 1rem;
+}
+
+.contact_form .form_input input[type="submit"]:focus {
+    border-color: hsl(43, 97%, 38%);
+    box-shadow: none;
+}
 
 
 /**********************************
@@ -731,5 +794,17 @@ and the initial information and image
     .container_resume .container_skills .skills,
     .container_portfolio .container_projects .projects {
         width: 31%;
+    }
+
+    /**********************************
+    ************ CONTACT *************
+    **********************************/
+
+    
+    /* CONTACT FORM */
+
+    .contact_form .form_input input,
+    .contact_form .form_input textarea {
+        font-size: 1rem;
     }
 }
