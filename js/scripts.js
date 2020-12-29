@@ -1,8 +1,6 @@
 const btnMenu = document.getElementById('btn_menu'),
       barNavigation = document.getElementById('bar_navigation'),
-      header = document.getElementById('main_header'),
-      contactButton = document.getElementById('contactButton'),
-      info = document.getElementById('info')
+      header = document.getElementById('main_header');
 
 // INITIAL EFFECTS ON THE PAGE
 
@@ -16,12 +14,15 @@ addEventListener('DOMContentLoaded', () => {
         initial.style.opacity = '1'
         initial.style.transform = 'translateY(0)'
     }, 1000)
-})
+});
 
 // Activate or desactivate the navigation bar with click on the hamburger button
 btnMenu.addEventListener('click', () => {
+    btnMenu.classList.toggle('la-bars')
+    btnMenu.classList.toggle('la-times')
+
     barNavigation.classList.toggle('bar_navigation_active')
-})
+});
 
 addEventListener('scroll', () => {
     if(scrollY >= 40) {
@@ -30,19 +31,24 @@ addEventListener('scroll', () => {
     else {
         header.style.background = 'transparent'
     }
-})
+});
 
-contactButton.addEventListener('click', () => {
+// Show information about me, container
+
+openInfo.addEventListener('click', () => {
+    const icon = document.querySelector('#openInfo i')
     let infoStyles = window.getComputedStyle(info)
 
-    if(infoStyles.getPropertyValue('opacity') == '0') {
-        // info.style.display = 'block'
-        info.style.opacity = '1'
-        info.style.transform = 'translate(0)'
+    if(infoStyles.getPropertyValue('--scale') == 0) {
+        info.style.setProperty('--scale', '1')
+        info.style.position = 'static'
+
+        icon.style.transform = 'rotate(90deg)'
     }
     else {
-        // info.style.display = 'none'
-        info.style.opacity = '0'
-        info.style.transform = 'translateY(-100%)'
+        info.style.setProperty('--scale', '0')
+        info.style.position = 'absolute'
+
+        icon.style.transform = 'rotate(0)'
     }
-})
+});

@@ -22,7 +22,7 @@
             <header id="main_header" class="main_header">
                 <div id="container_menu" class="container_menu">
                     <h1 class="main_title"><a href="#home">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
-                    <span id="btn_menu" class="btn_menu"><i class="las la-bars"></i></span>
+                    <i id="btn_menu" class="btn_menu las la-bars"></i>
                 </div>
                 <nav id="bar_navigation" class="bar_navigation">
                     <ul>
@@ -34,21 +34,26 @@
                     </ul>
                 </nav>
             </header>
-            <div class="initial_info">
+            
+            <section class="initial_info">
                 <strong>Hello, my name is Jaime Navarrete</strong>
+
                 <h2>Frontend & Backend Developer</h2>
-                <p id="info">I’m enthusiastic about web development, ready to learn new technologies and continue improving my current skills. I do my work with effort, passion, innovation and efficiency.</p>
+
+                <p class="openInfo" id="openInfo">Know more about me <i class="las la-angle-right"></i></p>
+                <p class="info" id="info">I am a web development enthusiast, ready to learn new technologies and keep improving my current skills. I always do my job with effort, passion, innovation and efficiency.</p>
+                
                 <a href="#contact" id="contactButton" class="btn_contact">Contact me</a>
-            </div>
+            </section>
         </div>
 
         <!-- Main content -->
     
         <section id="about_me" class="sections">
-            <div class="section_title">
+            <header class="section_title">
                 <h2>About me</h2>
                 <i class="lar la-user"></i>
-            </div>
+            </header>
             <div class="personal_info">
                 <article class="articles">
                     <h3 class="article_title">Personal information</h3>
@@ -108,10 +113,10 @@
 
         <div class="container_resume">
             <section id="resume" class="sections">
-                <div class="section_title">
+                <header class="section_title">
                     <h2>Resume</h2>
                     <i class="las la-address-book"></i>
-                </div>
+                </header>
 
                 <div class="chronologies_container">
                     <article class="articles">
@@ -173,20 +178,19 @@
                                 <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
                                 <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
                                 <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/ts.svg" alt="Typescript Icon" title="Typescript"><p>Typescript</p></figure>
                             </div>
     
                             <div class="skills_content">
-                                <h5>Frameworks</h5>
-                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                                <h5>Frameworks & libraries</h5>
+                                <figure><img src="./img/resume/skills/frontend/angular.svg" alt="Angular Icon" title="Angular"><p>Angular</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/bootstrap.png" alt="Bootstrap Icon" title="Bootstrap"><p>Bootstrap</p></figure>
+                                <figure><img src="./img/resume/skills/frontend/reactjs.svg" alt="ReactJS Icon" title="ReactJS"><p>ReactJS</p></figure>
                             </div>
     
                             <div class="skills_content">
-                                <h5>Libraries</h5>
-                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
+                                <h5>Others</h5>
+                                <figure><img src="./img/resume/skills/frontend/webpack.svg" alt="Webpack Icon" title="Webpack"><p>Webpack</p></figure>
                             </div>
                         </div>
                         <div class="skills">
@@ -196,6 +200,7 @@
                             </header>
                             <div class="skills_content">
                                 <h5>Languages</h5>
+                                <!-- <figure><img src="./img/resume/skills/backend/php.png" alt="PHP Icon" title="PHP"><p>PHP</p></figure> -->
                                 <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
                                 <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
                                 <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
@@ -203,6 +208,7 @@
     
                             <div class="skills_content">
                                 <h5>Frameworks</h5>
+                                <!-- <figure><img src="./img/resume/skills/backend/laravel.png" alt="Laravel Icon" title="Laravel"><p>Laravel</p></figure> -->
                                 <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
                                 <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
                                 <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
@@ -249,19 +255,19 @@
 
         <div class="container_portfolio">
             <section id="portfolio" class="sections">
-                <div class="section_title">
+                <header class="section_title">
                     <h2>Portfolio</h2>
                     <i class="las la-briefcase"></i>
-                </div>
+                </header>
     
                 <article class="articles container_projects">
                     <div class="projects">
                         <header class="projects_img">
-                            <img src="img/portfolio/project4.jpg" alt="Project 1" title="Project 1">
+                            <img src="img/portfolio/project1.png" alt="Project 1" title="Project 1">
                             <h3>My Portfolio</h3>
                         </header>
                         <div class="projects_content">
-                            <p>I created my portfolio using my own knowlegdes, without external help.</p>
+                            <p>I created my portfolio from scratch, using just my own knowlegdes.</p>
                             <div class="projects_technologies">
                                 <h4>Used technologies</h4>
                                 <img src="img/resume/skills/frontend/html5.svg" alt="HTML5" title="HTML 5">
@@ -269,8 +275,8 @@
                                 <img src="img/resume/skills/frontend/js.svg" alt="Javascript" title="Javascript">
                             </div>
                             <div class="projects_buttons">
-                                <a href="https://jaimenavarrete123.github.io/personal-portfolio/" class="main">View site</a>
-                                <a href="https://github.com/jaimenavarrete123/personal-portfolio">View code</a>
+                                <a href="https://jaimenavarrete123.github.io/personal-portfolio/" class="main" target="_blank">View site</a>
+                                <a href="https://github.com/jaimenavarrete123/personal-portfolio" target="_blank">View code</a>
                             </div>
                         </div>
                     </div>
@@ -318,10 +324,10 @@
 
 
         <section id="contact" class="sections">
-            <div class="section_title">
+            <header class="section_title">
                 <h2>Contact</h2>
                 <i class="lar la-envelope"></i>
-            </div>
+            </header>
 
             <article class="articles">
                 <h3 class="article_title">Social Networks</h3>

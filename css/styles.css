@@ -11,22 +11,25 @@ body {
 }
 
 /*
-The header wrapper contains the navigation bar 
-and the initial information and image
+The header wrapper contains the navigation bar,
+the initial information and the main image
 */
 
 .wrapper_header {
     background-image: url(../img/main_img.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     position: relative;
-    z-index: 1;
+    z-index: 0;
+
+    transition: .2s all ease-out;
 }
 
 .wrapper_header::before {
     content: '';
 
-    background: hsla(0,0%,11%,1);
+    background: hsla(0,0%,11%,.7);
     height: 100%;
     width: 100%;
     transition: .2s all ease-out;
@@ -147,7 +150,7 @@ and the initial information and image
     padding: 7.5rem 0 3rem 0;
     text-align: center;
 
-    opacity: 0;
+    opacity: 0.01;
     transform: translateY(-50%);
     transition: .2s all ease-out;
 
@@ -157,6 +160,7 @@ and the initial information and image
 
 .initial_info strong {
     border-bottom: 3px solid hsl(43, 97%, 61%);
+    display: inline-block;
     font-weight: bold;
     padding-bottom: .5rem;
     margin-bottom: .5rem;
@@ -165,17 +169,34 @@ and the initial information and image
 .initial_info h2 {
     font-family: 'Crimson Text', sans-serif, Helvetica, Arial;
     font-size: 4rem;
-    margin: 1.75rem;
+    margin: 1rem;
 }
 
 .initial_info p {
-    /* display: none; */
     font-size: 1.25rem;
-    opacity: 0;
-    padding-bottom: 2em;
-    transform: translateY(-100%);
 
     transition: .2s all ease-out;
+}
+
+.initial_info .openInfo {
+    color: hsl(43, 97%, 61%);
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    margin-bottom: 3rem;
+}
+
+.initial_info .openInfo i {
+    transform: rotate(0);
+    transition: .2s ease-out all;
+}
+
+.initial_info .info {
+    --scale: 0;
+
+    padding-bottom: 2em;
+    position: absolute;
+    transform: scale(var(--scale));
 }
 
 .initial_info .btn_contact,
@@ -187,7 +208,8 @@ and the initial information and image
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
-    padding: .75rem 3rem;
+    margin-bottom: 1rem;
+    padding: .5rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: .2s all ease-out;
@@ -618,7 +640,20 @@ and the initial information and image
  ********** MEDIA QUERIES **********
  ***********************************/
 
+
 @media screen and (min-width: 768px) {
+    /**********************************
+    ************* HEADER *************
+    **********************************/
+
+    .wrapper_header {
+        background-image: url(../img/main_img_2.jpg);
+    }
+
+    /***********************************
+    ********** OTHER SECTIONS **********
+    ***********************************/
+
     .sections .articles .services_container {
         display: flex;
         flex-wrap: wrap;
@@ -670,14 +705,13 @@ and the initial information and image
         font-size: 15px;
     }
 
-    /*
-    The header wrapper contains the navigation bar 
-    and the initial information and image
-    */
+    /***********************************
+    ******* INITIAL INFORMATION *******
+    ***********************************/
+    
 
-    .wrapper_header {
-        background-position: 50% 55%;
-        padding-top: .5rem;
+    .initial_info {
+        padding: 10rem 0 5rem 0 ;
     }
 
 
@@ -685,11 +719,13 @@ and the initial information and image
     ************* HEADER *************
     **********************************/
 
+    .wrapper_header {
+        display: flex;
+        justify-content: center;
+    }
+
 
     .main_header {
-        margin: 0 auto;
-        position: static;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -698,13 +734,17 @@ and the initial information and image
         width: 95%;
     }
 
+    .main_header .container_menu {
+        width: 50%;
+    }
+
     .main_header .container_menu .btn_menu {
         display: none;
     }
 
-    .main_header .container_menu .main_title {
+    /* .main_header .container_menu .main_title {
         text-align: center;
-    }
+    } */
 
     .main_header .bar_navigation {
         background: transparent;
@@ -726,7 +766,7 @@ and the initial information and image
     }
 
     .initial_info h2 {
-        margin: 4rem 0;
+        margin: 3rem 0;
     }
 
 
@@ -757,9 +797,20 @@ and the initial information and image
         font-size: 16px;
     }
 
-    .initial_info {
-        padding: 7.5rem 0;
-    } 
+    /***********************************
+    ******* INITIAL INFORMATION *******
+    ***********************************/
+
+
+    .initial_info #openInfo {
+        display: none;
+    }
+    
+    .initial_info #info {
+        position: static;
+
+        transform: scale(1);
+    }
 
     /**********************************
     ************ ABOUT ME ************
