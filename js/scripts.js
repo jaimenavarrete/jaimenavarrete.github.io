@@ -1,6 +1,11 @@
 const btnMenu = document.getElementById('btn_menu'),
       barNavigation = document.getElementById('bar_navigation'),
-      header = document.getElementById('main_header');
+      header = document.getElementById('header_container')
+
+const aboutMeSection = document.getElementById('about_me'),
+      resumeSection = document.getElementById('resume'),
+      portfolioSection = document.getElementById('portfolio'),
+      contactSection = document.getElementById('contact')
 
 // INITIAL EFFECTS ON THE PAGE
 
@@ -20,8 +25,18 @@ addEventListener('DOMContentLoaded', () => {
 btnMenu.addEventListener('click', () => {
     btnMenu.classList.toggle('la-bars')
     btnMenu.classList.toggle('la-times')
-
     barNavigation.classList.toggle('bar_navigation_active')
+
+    if(scrollY >= 40) return
+
+    const styles = getComputedStyle(header)
+
+    if(styles.backgroundColor === 'rgba(0, 0, 0, 0)') {
+        header.style.background = 'hsl(0, 0%, 5%)'
+    }
+    else {
+        header.style.background = 'transparent'
+    }
 });
 
 addEventListener('scroll', () => {

@@ -6,9 +6,11 @@
     <title>Jaime Navarrete</title>
     <!-- Principal Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome - Line Awesome -->
     <!-- <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -19,21 +21,23 @@
         <!-- Header and initial info -->
 
         <div id="home" class="wrapper_header">
-            <header id="main_header" class="main_header">
-                <div id="container_menu" class="container_menu">
-                    <h1 class="main_title"><a href="#home">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
-                    <i id="btn_menu" class="btn_menu las la-bars"></i>
-                </div>
-                <nav id="bar_navigation" class="bar_navigation">
-                    <ul>
-                        <li><a href="#home" class="current_item"><i class="las la-home"></i> Home</a></li>
-                        <li><a href="#about_me"><i class="lar la-user"></i> About me</a></li>
-                        <li><a href="#resume"><i class="las la-address-book"></i> Resume</a></li>
-                        <li><a href="#portfolio"><i class="las la-briefcase"></i> Portfolio</a></li>
-                        <li><a href="#contact"><i class="lar la-envelope"></i> Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <div id="header_container" class="header_container">
+                <header id="main_header" class="main_header">
+                    <div id="container_menu" class="container_menu">
+                        <h1 class="main_title"><a href="#home">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
+                        <i id="btn_menu" class="btn_menu las la-bars"></i>
+                    </div>
+                    <nav id="bar_navigation" class="bar_navigation">
+                        <ul>
+                            <li><a href="#home" class="current_item"><i class="las la-home"></i> Home</a></li>
+                            <li><a href="#about_me"><i class="lar la-user"></i> About me</a></li>
+                            <li><a href="#resume"><i class="las la-address-book"></i> Resume</a></li>
+                            <li><a href="#portfolio"><i class="las la-briefcase"></i> Portfolio</a></li>
+                            <li><a href="#contact"><i class="lar la-envelope"></i> Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
             
             <section class="initial_info">
                 <strong>Hello, my name is Jaime Navarrete</strong>
@@ -352,7 +356,7 @@
                     </div>
                     <div class="form_input">
                         <!-- <label for="input_email">Message</label> -->
-                        <textarea id="input_message" rows="15" placeholder="Message"></textarea>
+                        <textarea id="input_message" rows="7" placeholder="Message"></textarea>
                     </div>
                     <div class="form_input">
                         <input type="submit" id="send_message" value="Send message">
