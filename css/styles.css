@@ -275,6 +275,11 @@ the initial information and the main image
  ************ ABOUT ME ************
  **********************************/
 
+.container_about_me {
+    overflow: hidden;
+    padding: .5rem 0;
+}
+
 .sections .articles .article_title {
     color: hsl(43, 97%, 61%);
     font-size: 2rem;
@@ -395,7 +400,7 @@ the initial information and the main image
 }
 
 .container_resume .chronologies h4 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: normal;
     margin-bottom: .75rem;
     text-transform: uppercase;
@@ -404,7 +409,7 @@ the initial information and the main image
 .container_resume .chronologies em {
     color: hsl(43, 97%, 61%);
     display: block;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     font-style: normal;
 }
@@ -535,6 +540,10 @@ the initial information and the main image
  ************ CONTACT *************
  **********************************/
 
+.container_contact {
+    overflow: hidden;
+    padding: .5rem 0;
+}
 
 /* SOCIAL NETWORKS */
 
