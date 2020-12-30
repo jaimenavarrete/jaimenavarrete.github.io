@@ -29,7 +29,7 @@ the initial information and the main image
 .wrapper_header::before {
     content: '';
 
-    background: hsla(0,0%,11%,.7);
+    background: hsla(0,0%,11%,1);
     height: 100%;
     width: 100%;
     transition: .2s all ease-out;
@@ -119,7 +119,7 @@ the initial information and the main image
 }
 
 .main_header .bar_navigation_active {
-    left: 25%;
+    left: 55%;
 }
 
 .main_header .bar_navigation ul {
@@ -780,6 +780,11 @@ the initial information and the main image
 
     .sections .personal_info {
         display: flex;
+    }
+
+    .sections .personal_info .personal_info_data {
+        margin-right: 1rem;
+        width: 100%;
     }
 
     .sections .personal_info h3 {
