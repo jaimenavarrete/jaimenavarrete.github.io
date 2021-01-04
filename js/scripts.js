@@ -1,11 +1,66 @@
 const btnMenu = document.getElementById('btn_menu'),
       barNavigation = document.getElementById('bar_navigation'),
+      btnsNavigation = Array.from(barNavigation.querySelectorAll('ul li a')),
       header = document.getElementById('header_container')
 
-const aboutMeSection = document.getElementById('about_me'),
-      resumeSection = document.getElementById('resume'),
-      portfolioSection = document.getElementById('portfolio'),
-      contactSection = document.getElementById('contact')
+// const aboutMeSection = document.getElementById('about_me'),
+//       resumeSection = document.getElementById('resume'),
+//       portfolioSection = document.getElementById('portfolio'),
+//       contactSection = document.getElementById('contact')
+
+// NAVIGATION BUTTONS'S SCRIPT (ANIMATION SCROLL)
+
+const animationScrollUp = (sectionPosition) => {
+    let currentScroll = document.documentElement.scrollTop
+
+    if(currentScroll > sectionPosition) {
+        window.scrollTo(0, currentScroll - currentScroll / 20)
+
+        if(currentScroll - sectionPosition < currentScroll / 20) window.scrollTo(0, sectionPosition)
+
+        window.requestAnimationFrame(() => animationScrollUp(sectionPosition))
+    }
+}
+
+const animationScrollDown = (sectionPosition) => {
+    let currentScroll = document.documentElement.scrollTop
+
+    if(currentScroll < sectionPosition) {
+        window.scrollTo(0, currentScroll + 50)
+
+        if(sectionPosition - currentScroll < 50) window.scrollTo(0, sectionPosition)
+
+        window.requestAnimationFrame(() => animationScrollDown(sectionPosition))
+    }
+}
+
+const btnNavigationScroll = e => {
+    const btnPressed = btnsNavigation.find(btn => btn === e.target)
+    
+    if(btnPressed) {
+        const section = btnPressed.getAttribute('href')
+        
+        let sectionPosition = document.querySelector(section).offsetTop,
+            currentScroll = document.documentElement.scrollTop
+
+        if(currentScroll > sectionPosition) {
+            animationScrollUp(sectionPosition)
+        }
+        else if(currentScroll < sectionPosition) {
+            animationScrollDown(sectionPosition)
+        }
+    }
+
+    e.preventDefault();
+}
+
+barNavigation.addEventListener('click', e => btnNavigationScroll(e))
+
+
+// BUTTONS'S NAVIGATION SCRIPT
+
+
+
 
 // INITIAL EFFECTS ON THE PAGE
 
