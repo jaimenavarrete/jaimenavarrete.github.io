@@ -144,23 +144,3 @@ btnMenu.addEventListener('click', () => {
         header.style.background = 'transparent'
     }
 });
-
-// Show information about me, container
-
-openInfo.addEventListener('click', () => {
-    const icon = document.querySelector('#openInfo i')
-    let infoStyles = window.getComputedStyle(info)
-
-    if(infoStyles.getPropertyValue('--scale') == 0) {
-        info.style.setProperty('--scale', '1')
-        info.style.position = 'static'
-
-        icon.style.transform = 'rotate(90deg)'
-    }
-    else {
-        info.style.setProperty('--scale', '0')
-        info.style.position = 'absolute'
-
-        icon.style.transform = 'rotate(0)'
-    }
-});

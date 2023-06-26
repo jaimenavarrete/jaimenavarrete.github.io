@@ -185,19 +185,6 @@ the initial information and the main image
     transition: 0.2s all ease-out;
 }
 
-.initial_info .openInfo {
-    color: hsl(43, 97%, 61%);
-    cursor: pointer;
-    font-weight: bold;
-    user-select: none;
-    margin-bottom: 3rem;
-}
-
-.initial_info .openInfo i {
-    transform: rotate(0);
-    transition: 0.2s ease-out all;
-}
-
 .initial_info .info {
     --scale: 0;
 
@@ -789,10 +776,6 @@ the initial information and the main image
     /***********************************
     ******* INITIAL INFORMATION *******
     ***********************************/
-
-    .initial_info .openInfo {
-        display: none;
-    }
 
     .initial_info .info {
         position: static;
