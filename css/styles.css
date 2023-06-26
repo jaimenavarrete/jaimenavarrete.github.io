@@ -206,30 +206,33 @@ the initial information and the main image
     transform: scale(var(--scale));
 }
 
-.initial_info .btn_contact,
-.contact_form .form_input input[type='submit'] {
-    background: hsl(43, 97%, 61%);
-    border: 3px solid hsl(43, 97%, 61%);
-    color: hsl(0, 0%, 17%);
-    cursor: pointer;
+.initial_info .btn_contact {
+    background: transparent;
+    border: 2px solid hsl(210, 90%, 60%);
+    border-radius: 50px;
+    color: hsl(210, 90%, 60%);
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    padding: 0.5rem 3rem;
+    padding: 0.25rem 2.5rem;
     text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.2s all ease-out;
+    transition: 0.1s all ease-out;
 }
 
-.initial_info .btn_contact:hover,
-.contact_form .form_input input[type='submit']:hover {
-    border-color: hsl(43, 97%, 38%);
+.initial_info .btn_github {
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
 }
 
-.initial_info .btn_contact:active,
-.contact_form .form_input input[type='submit']:active {
-    background: hsl(43, 97%, 38%);
+.initial_info .btn_contact:hover {
+    background: hsl(210, 90%, 60%);
+    color: hsl(0, 0%, 95%);
+}
+
+.initial_info .btn_github:hover {
+    background: hsl(0, 0%, 95%);
+    color: hsl(240, 1%, 15%);
 }
 
 /**********************************
