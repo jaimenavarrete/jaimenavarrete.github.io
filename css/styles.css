@@ -16,7 +16,7 @@ the initial information and the main image
 */
 
 .wrapper_header {
-    background-image: url(../img/main_img.jpg);
+    background-image: url(../img/main_img_min.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

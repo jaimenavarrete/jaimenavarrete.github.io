@@ -115,14 +115,14 @@ addEventListener('scroll', changeNavItemBorder)
 
 addEventListener('DOMContentLoaded', () => {
     // Initial effects on header
-    setTimeout(() => document.styleSheets[3].addRule('.wrapper_header::before', 'background: hsla(0,0%,0%,.6)'), 500)
+    setTimeout(() => document.styleSheets[3].addRule('.wrapper_header::before', 'background: hsla(0,0%,0%,.7)'), 50)
 
     // Initial effects on initial info container
     let initial = document.querySelector('.initial_info')
     setTimeout(() => {
         initial.style.opacity = '1'
         initial.style.transform = 'translateY(0)'
-    }, 1000)
+    }, 100)
 
     changeNavItemBorder()
 });
