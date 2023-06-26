@@ -1,158 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaime Navarrete</title>
-    <!-- Principal Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome - Line Awesome -->
-    <!-- <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jaime Navarrete</title>
+        <!-- Principal Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <main>
-        <!-- Header and initial info -->
+        <!-- Font Awesome - Line Awesome -->
+        <!-- <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css"> -->
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
 
-        <div id="home" class="wrapper_header">
-            <div id="header_container" class="header_container">
-                <header id="main_header" class="main_header">
-                    <div id="container_menu" class="container_menu">
-                        <h1 class="main_title"><a href="#home">Jaime <span class="main_title_mod">Navarrete</span></a></h1>
-                        <i id="btn_menu" class="btn_menu las la-bars"></i>
-                    </div>
-                    <nav id="bar_navigation" class="bar_navigation">
-                        <ul>
-                            <!-- <li><a href="#home" class="current_item"><i class="las la-home"></i> Home</a></li>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <main>
+            <!-- Header and initial info -->
+
+            <div id="home" class="wrapper_header">
+                <div id="header_container" class="header_container">
+                    <header id="main_header" class="main_header">
+                        <div id="container_menu" class="container_menu">
+                            <h1 class="main_title">
+                                <a href="#home"
+                                    >Jaime
+                                    <span class="main_title_mod"
+                                        >Navarrete</span
+                                    ></a
+                                >
+                            </h1>
+                            <i id="btn_menu" class="btn_menu las la-bars"></i>
+                        </div>
+                        <nav id="bar_navigation" class="bar_navigation">
+                            <ul>
+                                <!-- <li><a href="#home" class="current_item"><i class="las la-home"></i> Home</a></li>
                             <li><a href="#about_me"><i class="lar la-user"></i> About me</a></li>
                             <li><a href="#resume"><i class="las la-address-book"></i> Resume</a></li>
                             <li><a href="#portfolio"><i class="las la-briefcase"></i> Portfolio</a></li>
                             <li><a href="#contact"><i class="lar la-envelope"></i> Contact</a></li> -->
-                            <li><a id="btn_menu_home" href="#home"><i class="las la-home"></i> Home</a></li>
-                            <li><a id="btn_menu_about_me" href="#about_me"><i class="lar la-user"></i> About me</a></li>
-                            <li><a id="btn_menu_resume" href="#resume"><i class="las la-address-book"></i> Resume</a></li>
-                            <li><a id="btn_menu_portfolio" href="#portfolio"><i class="las la-briefcase"></i> Portfolio</a></li>
-                            <li><a id="btn_menu_contact" href="#contact"><i class="lar la-envelope"></i> Contact</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
-            
-            <section class="initial_info">
-                <strong>Hello, my name is Jaime Navarrete</strong>
-
-                <h2>Frontend & Backend Developer</h2>
-
-                <p class="openInfo" id="openInfo">Know more about me <i class="las la-angle-right"></i></p>
-                <p class="info" id="info">I am a web development enthusiast, ready to learn new technologies and keep improving my current skills. I always do my job with effort, passion, innovation and efficiency.</p>
-                
-                <a href="#contact" id="contactButton" class="btn_contact">Contact me</a>
-            </section>
-        </div>
-
-        <!-- Main content -->
-    
-        <div id="about_me" class="container_about_me">
-            <section class="sections">
-                <header class="section_title">
-                    <h2>About me</h2>
-                    <i class="lar la-user"></i>
-                </header>
-                <div class="personal_info">
-                    <article class="articles personal_info_data">
-                        <h3 class="article_title">Personal information</h3>
-        
-                        <p><span>Name: </span>Jaime Navarrete</p>
-                        <p><span>Age: </span>21 years old</p>
-                        <p><span>Nationality: </span>Salvadorian</p>
-                        <p><span>Address: </span>San Esteban Catarina, San Vicente</p>
-                        <p><span>Email: </span>correo@correo.com</p>
-                        <p><span>Phone: </span>+503 12345678</p>
-                        <p><a href="#" class="btn_contact">Download CV</a></p>
-                    </article>
-                    <article class="articles">
-                        <h3 class="article_title">Frontend & Backend Developer</h3>
-        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos, corrupti nostrum quibusdam quis vero excepturi commodi omnis itaque unde eum laboriosam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos, corrupti nostrum quibusdam quis vero excepturi commodi omnis itaque unde eum laboriosam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos, corrupti nostrum quibusdam quis vero excepturi commodi omnis itaque unde eum laboriosam?</p>
-                    </article>
+                                <li>
+                                    <a id="btn_menu_home" href="#home"
+                                        ><i class="las la-home"></i> Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="btn_menu_about_me" href="#about_me"
+                                        ><i class="lar la-user"></i> About me</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="btn_menu_resume" href="#resume"
+                                        ><i class="las la-address-book"></i>
+                                        Resume</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="btn_menu_portfolio" href="#portfolio"
+                                        ><i class="las la-briefcase"></i>
+                                        Portfolio</a
+                                    >
+                                </li>
+                                <li>
+                                    <a id="btn_menu_contact" href="#contact"
+                                        ><i class="lar la-envelope"></i>
+                                        Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
                 </div>
 
-                <article class="articles">
-                    <h3 class="article_title">Services</h3>
-                    <div class="services_container">
-                        <div class="services">
-                            <figure>
-                                <i class="las la-desktop"></i>
-                                <h4>Web Development</h4>
-                            </figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos.</p>
-                        </div>
-                        <div class="services">
-                            <figure>
-                                <i class="las la-desktop"></i>
-                                <h4>Web Development</h4>
-                            </figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos.</p>
-                        </div>
-                        <div class="services">
-                            <figure>
-                                <i class="las la-desktop"></i>
-                                <h4>Web Development</h4>
-                            </figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos.</p>
-                        </div>
-                        <div class="services">
-                            <figure>
-                                <i class="las la-desktop"></i>
-                                <h4>Web Development</h4>
-                            </figure>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iusto nihil et dicta, fugiat, voluptatum architecto rem eos.</p>
-                        </div>
+                <section class="initial_info">
+                    <strong>Hello, my name is Jaime Navarrete</strong>
+
+                    <h2>Frontend & Backend Developer</h2>
+
+                    <p class="openInfo" id="openInfo">
+                        Know more about me <i class="las la-angle-right"></i>
+                    </p>
+                    <p class="info" id="info">
+                        I am a web development enthusiast, ready to learn new
+                        technologies and keep improving my current skills. I
+                        always do my job with effort, passion, innovation and
+                        efficiency.
+                    </p>
+
+                    <a href="#contact" id="contactButton" class="btn_contact"
+                        >Contact me</a
+                    >
+                </section>
+            </div>
+
+            <!-- Main content -->
+
+            <div id="about_me" class="container_about_me">
+                <section class="sections">
+                    <header class="section_title">
+                        <h2>About me</h2>
+                        <i class="lar la-user"></i>
+                    </header>
+                    <div class="personal_info">
+                        <article class="articles personal_info_data">
+                            <h3 class="article_title">Personal information</h3>
+
+                            <p><span>Name: </span>Jaime Navarrete</p>
+                            <p><span>Age: </span>21 years old</p>
+                            <p><span>Nationality: </span>Salvadorian</p>
+                            <p>
+                                <span>Address: </span>San Esteban Catarina, San
+                                Vicente
+                            </p>
+                            <p><span>Email: </span>correo@correo.com</p>
+                            <p><span>Phone: </span>+503 12345678</p>
+                            <p>
+                                <a href="#" class="btn_contact">Download CV</a>
+                            </p>
+                        </article>
+                        <article class="articles">
+                            <h3 class="article_title">
+                                Frontend & Backend Developer
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum iusto nihil et dicta,
+                                fugiat, voluptatum architecto rem eos, corrupti
+                                nostrum quibusdam quis vero excepturi commodi
+                                omnis itaque unde eum laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum iusto nihil et dicta,
+                                fugiat, voluptatum architecto rem eos, corrupti
+                                nostrum quibusdam quis vero excepturi commodi
+                                omnis itaque unde eum laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Harum iusto nihil et dicta,
+                                fugiat, voluptatum architecto rem eos, corrupti
+                                nostrum quibusdam quis vero excepturi commodi
+                                omnis itaque unde eum laboriosam?
+                            </p>
+                        </article>
                     </div>
-                </article>
-            </section>
-        </div>
 
-        <div id="resume" class="container_resume">
-            <section class="sections">
-                <header class="section_title">
-                    <h2>Resume</h2>
-                    <i class="las la-address-book"></i>
-                </header>
-
-                <div class="chronologies_container">
                     <article class="articles">
-                        <h3 class="article_title">Education</h3>
-
-                        <div class="chronologies">
-                            <figure><img src="img/resume/education/logoUDB.jpg" alt="Logo UDB"></figure>
-                            <h4>Computer Science Engineering</h4>
-                            <em>Universidad Don Bosco, El Salvador</em>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                        </div>
-                        <div class="chronologies">
-                            <figure><img src="img/resume/education/logoUDB.jpg" alt="Logo UDB"></figure>
-                            <h4>Computer Science Engineering</h4>
-                            <em>Universidad Don Bosco, El Salvador</em>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
-                        </div>
-                        <div class="chronologies">
-                            <figure><img src="img/resume/education/logoUDB.jpg" alt="Logo UDB"></figure>
-                            <h4>Computer Science Engineering</h4>
-                            <em>Universidad Don Bosco, El Salvador</em>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
+                        <h3 class="article_title">Services</h3>
+                        <div class="services_container">
+                            <div class="services">
+                                <figure>
+                                    <i class="las la-desktop"></i>
+                                    <h4>Web Development</h4>
+                                </figure>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum iusto nihil et
+                                    dicta, fugiat, voluptatum architecto rem
+                                    eos.
+                                </p>
+                            </div>
+                            <div class="services">
+                                <figure>
+                                    <i class="las la-desktop"></i>
+                                    <h4>Web Development</h4>
+                                </figure>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum iusto nihil et
+                                    dicta, fugiat, voluptatum architecto rem
+                                    eos.
+                                </p>
+                            </div>
+                            <div class="services">
+                                <figure>
+                                    <i class="las la-desktop"></i>
+                                    <h4>Web Development</h4>
+                                </figure>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum iusto nihil et
+                                    dicta, fugiat, voluptatum architecto rem
+                                    eos.
+                                </p>
+                            </div>
+                            <div class="services">
+                                <figure>
+                                    <i class="las la-desktop"></i>
+                                    <h4>Web Development</h4>
+                                </figure>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Harum iusto nihil et
+                                    dicta, fugiat, voluptatum architecto rem
+                                    eos.
+                                </p>
+                            </div>
                         </div>
                     </article>
+                </section>
+            </div>
 
-                    <!-- <article class="articles">
+            <div id="resume" class="container_resume">
+                <section class="sections">
+                    <header class="section_title">
+                        <h2>Resume</h2>
+                        <i class="las la-address-book"></i>
+                    </header>
+
+                    <div class="chronologies_container">
+                        <article class="articles">
+                            <h3 class="article_title">Education</h3>
+
+                            <div class="chronologies">
+                                <figure>
+                                    <img
+                                        src="img/resume/education/logoUDB.jpg"
+                                        alt="Logo UDB"
+                                    />
+                                </figure>
+                                <h4>Computer Science Engineering</h4>
+                                <em>Universidad Don Bosco, El Salvador</em>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In volutpat nunc eu leo
+                                    sagittis tristique. Sed id libero justo.
+                                    Suspendisse interdum leo quis dui
+                                    consectetur fringilla.
+                                </p>
+                            </div>
+                            <div class="chronologies">
+                                <figure>
+                                    <img
+                                        src="img/resume/education/logoUDB.jpg"
+                                        alt="Logo UDB"
+                                    />
+                                </figure>
+                                <h4>Computer Science Engineering</h4>
+                                <em>Universidad Don Bosco, El Salvador</em>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In volutpat nunc eu leo
+                                    sagittis tristique. Sed id libero justo.
+                                    Suspendisse interdum leo quis dui
+                                    consectetur fringilla.
+                                </p>
+                            </div>
+                            <div class="chronologies">
+                                <figure>
+                                    <img
+                                        src="img/resume/education/logoUDB.jpg"
+                                        alt="Logo UDB"
+                                    />
+                                </figure>
+                                <h4>Computer Science Engineering</h4>
+                                <em>Universidad Don Bosco, El Salvador</em>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In volutpat nunc eu leo
+                                    sagittis tristique. Sed id libero justo.
+                                    Suspendisse interdum leo quis dui
+                                    consectetur fringilla.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- <article class="articles">
                         <h3 class="article_title">Experience</h3>
 
                         <div class="chronologies">
@@ -174,205 +301,431 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat nunc eu leo sagittis tristique. Sed id libero justo. Suspendisse interdum leo quis dui consectetur fringilla.</p>
                         </div>
                     </article> -->
-                </div>
-                <article class="articles">
-                    <h3 class="article_title">Skills</h3>
-                    <div class="container_skills">
-                        <div class="skills">
-                            <header>
-                                <i class="las la-code"></i>
-                                <h4>Frontend Skills</h4>
+                    </div>
+                    <article class="articles">
+                        <h3 class="article_title">Skills</h3>
+                        <div class="container_skills">
+                            <div class="skills">
+                                <header>
+                                    <i class="las la-code"></i>
+                                    <h4>Frontend Skills</h4>
+                                </header>
+                                <div class="skills_content">
+                                    <h5>Languages</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/html5.svg"
+                                            alt="HTML5 Icon"
+                                            title="HTML 5"
+                                        />
+                                        <p>HTML5</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/css3.svg"
+                                            alt="CSS3 Icon"
+                                            title="HTML 5"
+                                        />
+                                        <p>CSS3</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/js.svg"
+                                            alt="Javascript Icon"
+                                            title="Javascript"
+                                        />
+                                        <p>Javascript</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/ts.svg"
+                                            alt="Typescript Icon"
+                                            title="Typescript"
+                                        />
+                                        <p>Typescript</p>
+                                    </figure>
+                                </div>
+
+                                <div class="skills_content">
+                                    <h5>Frameworks & libraries</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/angular.svg"
+                                            alt="Angular Icon"
+                                            title="Angular"
+                                        />
+                                        <p>Angular</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/bootstrap.png"
+                                            alt="Bootstrap Icon"
+                                            title="Bootstrap"
+                                        />
+                                        <p>Bootstrap</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/reactjs.svg"
+                                            alt="ReactJS Icon"
+                                            title="ReactJS"
+                                        />
+                                        <p>ReactJS</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/tailwindcss.svg"
+                                            alt="TailwindCSS Icon"
+                                            title="TailwindCSS"
+                                        />
+                                        <p>TailwindCSS</p>
+                                    </figure>
+                                </div>
+
+                                <div class="skills_content">
+                                    <h5>Others</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/frontend/webpack.svg"
+                                            alt="Webpack Icon"
+                                            title="Webpack"
+                                        />
+                                        <p>Webpack</p>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <header>
+                                    <i class="las la-server"></i>
+                                    <h4>Backend Skills</h4>
+                                </header>
+                                <div class="skills_content">
+                                    <h5>Languages</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/backend/php.png"
+                                            alt="PHP Icon"
+                                            title="PHP"
+                                        />
+                                        <p>PHP</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/backend/nodejs.svg"
+                                            alt="NodeJS Icon"
+                                            title="NodeJS"
+                                        />
+                                        <p>NodeJS</p>
+                                    </figure>
+                                </div>
+
+                                <div class="skills_content">
+                                    <h5>Frameworks</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/backend/laravel.png"
+                                            alt="Laravel Icon"
+                                            title="Laravel"
+                                        />
+                                        <p>Laravel</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/backend/expressjs.png"
+                                            alt="ExpressJS Icon"
+                                            title="ExpressJS"
+                                        />
+                                        <p>ExpressJS</p>
+                                    </figure>
+                                </div>
+
+                                <div class="skills_content">
+                                    <h5>Databases</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/backend/mysql.png"
+                                            alt="MySQL Icon"
+                                            title="MySQL"
+                                        />
+                                        <p>MySQL</p>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <header>
+                                    <i class="lab la-trello"></i>
+                                    <h4>Other Skills</h4>
+                                </header>
+                                <div class="skills_content">
+                                    <h5>Languages</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/others/spanishElSalvador.png"
+                                            alt="El Salvador Flag"
+                                            title="Spanish El Salvador"
+                                            style="height: 25px"
+                                        />
+                                        <p>Spanish (Native)</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/others/englishUSA2.svg"
+                                            alt="USA Flag"
+                                            title="English USA"
+                                        />
+                                        <p>English (Intermediate)</p>
+                                    </figure>
+                                </div>
+
+                                <div class="skills_content">
+                                    <h5>Team Work</h5>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/others/git.svg"
+                                            alt="Git Icon"
+                                            title="Git & Github"
+                                        />
+                                        <p>Git & GitHub</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/others/trello.svg"
+                                            alt="Trello Icon"
+                                            title="Trello"
+                                        />
+                                        <p>Trello</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/others/asana.svg"
+                                            alt="Asana Icon"
+                                            title="Asana"
+                                        />
+                                        <p>Asana</p>
+                                    </figure>
+                                    <figure>
+                                        <img
+                                            src="./img/resume/skills/others/scrum.svg"
+                                            alt="Scrum Icon"
+                                            title="Scrum"
+                                        />
+                                        <p>Scrum</p>
+                                    </figure>
+                                </div>
+
+                                <div class="skills_content">
+                                    <h5>Libraries</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+
+            <div id="portfolio" class="container_portfolio">
+                <section class="sections">
+                    <header class="section_title">
+                        <h2>Portfolio</h2>
+                        <i class="las la-briefcase"></i>
+                    </header>
+
+                    <article class="articles container_projects">
+                        <div class="projects">
+                            <header class="projects_img">
+                                <img
+                                    src="img/portfolio/project1.png"
+                                    alt="Project 1"
+                                    title="Project 1"
+                                />
+                                <h3>My Portfolio</h3>
                             </header>
-                            <div class="skills_content">
-                                <h5>Languages</h5>
-                                <figure><img src="./img/resume/skills/frontend/html5.svg" alt="HTML5 Icon" title="HTML 5"><p>HTML5</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/css3.svg" alt="CSS3 Icon" title="HTML 5"><p>CSS3</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/js.svg" alt="Javascript Icon" title="Javascript"><p>Javascript</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/ts.svg" alt="Typescript Icon" title="Typescript"><p>Typescript</p></figure>
-                            </div>
-    
-                            <div class="skills_content">
-                                <h5>Frameworks & libraries</h5>
-                                <figure><img src="./img/resume/skills/frontend/angular.svg" alt="Angular Icon" title="Angular"><p>Angular</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/bootstrap.png" alt="Bootstrap Icon" title="Bootstrap"><p>Bootstrap</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/reactjs.svg" alt="ReactJS Icon" title="ReactJS"><p>ReactJS</p></figure>
-                                <figure><img src="./img/resume/skills/frontend/tailwindcss.svg" alt="TailwindCSS Icon" title="TailwindCSS"><p>TailwindCSS</p></figure>
-                            </div>
-    
-                            <div class="skills_content">
-                                <h5>Others</h5>
-                                <figure><img src="./img/resume/skills/frontend/webpack.svg" alt="Webpack Icon" title="Webpack"><p>Webpack</p></figure>
+                            <div class="projects_content">
+                                <p>
+                                    I created my portfolio from scratch, using
+                                    just my own knowlegdes.
+                                </p>
+                                <div class="projects_technologies">
+                                    <h4>Used technologies</h4>
+                                    <img
+                                        src="img/resume/skills/frontend/html5.svg"
+                                        alt="HTML5"
+                                        title="HTML 5"
+                                    />
+                                    <img
+                                        src="img/resume/skills/frontend/css3.svg"
+                                        alt="CSS3"
+                                        title="CSS3"
+                                    />
+                                    <img
+                                        src="img/resume/skills/frontend/js.svg"
+                                        alt="Javascript"
+                                        title="Javascript"
+                                    />
+                                </div>
+                                <div class="projects_buttons">
+                                    <a
+                                        href="https://jaimenavarrete123.github.io/personal-portfolio/"
+                                        class="main"
+                                        target="_blank"
+                                        >View site</a
+                                    >
+                                    <a
+                                        href="https://github.com/jaimenavarrete123/personal-portfolio"
+                                        target="_blank"
+                                        >View code</a
+                                    >
+                                </div>
                             </div>
                         </div>
-                        <div class="skills">
-                            <header>
-                                <i class="las la-server"></i>
-                                <h4>Backend Skills</h4>
+                        <div class="projects">
+                            <header class="projects_img">
+                                <img
+                                    src="img/portfolio/project4.jpg"
+                                    alt="Project 1"
+                                    title="Project 1"
+                                />
+                                <h3>Project 2</h3>
                             </header>
-                            <div class="skills_content">
-                                <h5>Languages</h5>
-                                <figure><img src="./img/resume/skills/backend/php.png" alt="PHP Icon" title="PHP"><p>PHP</p></figure>
-                                <figure><img src="./img/resume/skills/backend/nodejs.svg" alt="NodeJS Icon" title="NodeJS"><p>NodeJS</p></figure>
-                                
-                            </div>
-    
-                            <div class="skills_content">
-                                <h5>Frameworks</h5>
-                                <figure><img src="./img/resume/skills/backend/laravel.png" alt="Laravel Icon" title="Laravel"><p>Laravel</p></figure>
-                                <figure><img src="./img/resume/skills/backend/expressjs.png" alt="ExpressJS Icon" title="ExpressJS"><p>ExpressJS</p></figure>
-                            </div>
-    
-                            <div class="skills_content">
-                                <h5>Databases</h5>
-                                <figure><img src="./img/resume/skills/backend/mysql.png" alt="MySQL Icon" title="MySQL"><p>MySQL</p></figure>
+                            <div class="projects_content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                </p>
+                                <div class="projects_technologies">
+                                    <h4>Used technologies</h4>
+                                    <img
+                                        src="img/resume/skills/frontend/html5.svg"
+                                        alt="HTML5"
+                                        title="HTML 5"
+                                    />
+                                    <img
+                                        src="img/resume/skills/frontend/css3.svg"
+                                        alt="CSS3"
+                                        title="CSS3"
+                                    />
+                                    <img
+                                        src="img/resume/skills/frontend/js.svg"
+                                        alt="Javascript"
+                                        title="Javascript"
+                                    />
+                                </div>
+                                <div class="projects_buttons">
+                                    <a href="#" class="main">View site</a>
+                                    <a href="#">View code</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills">
-                            <header>
-                                <i class="lab la-trello"></i>
-                                <h4>Other Skills</h4>
+                        <div class="projects">
+                            <header class="projects_img">
+                                <img
+                                    src="img/portfolio/project4.jpg"
+                                    alt="Project 1"
+                                    title="Project 1"
+                                />
+                                <h3>Project 3</h3>
                             </header>
-                            <div class="skills_content">
-                                <h5>Languages</h5>
-                                <figure><img src="./img/resume/skills/others/spanishElSalvador.png" alt="El Salvador Flag" title="Spanish El Salvador" style="height: 25px;"><p>Spanish (Native)</p></figure>
-                                <figure><img src="./img/resume/skills/others/englishUSA2.svg" alt="USA Flag" title="English USA"><p>English (Intermediate)</p></figure>
-                            </div>
-    
-                            <div class="skills_content">
-                                <h5>Team Work</h5>
-                                <figure><img src="./img/resume/skills/others/git.svg" alt="Git Icon" title="Git & Github"><p>Git & GitHub</p></figure>
-                                <figure><img src="./img/resume/skills/others/trello.svg" alt="Trello Icon" title="Trello"><p>Trello</p></figure>
-                                <figure><img src="./img/resume/skills/others/asana.svg" alt="Asana Icon" title="Asana"><p>Asana</p></figure>
-                                <figure><img src="./img/resume/skills/others/scrum.svg" alt="Scrum Icon" title="Scrum"><p>Scrum</p></figure>
-                            </div>
-    
-                            <div class="skills_content">
-                                <h5>Libraries</h5>
-                                
+                            <div class="projects_content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                </p>
+                                <div class="projects_technologies">
+                                    <h4>Used technologies</h4>
+                                    <img
+                                        src="img/resume/skills/frontend/html5.svg"
+                                        alt="HTML5"
+                                        title="HTML 5"
+                                    />
+                                    <img
+                                        src="img/resume/skills/frontend/css3.svg"
+                                        alt="CSS3"
+                                        title="CSS3"
+                                    />
+                                    <img
+                                        src="img/resume/skills/frontend/js.svg"
+                                        alt="Javascript"
+                                        title="Javascript"
+                                    />
+                                </div>
+                                <div class="projects_buttons">
+                                    <a href="#" class="main">View site</a>
+                                    <a href="#">View code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>
-            </section>
-        </div>
+                    </article>
+                </section>
+            </div>
 
+            <div id="contact" class="container_contact">
+                <section class="sections">
+                    <header class="section_title">
+                        <h2>Contact</h2>
+                        <i class="lar la-envelope"></i>
+                    </header>
 
-        <div id="portfolio" class="container_portfolio">
-            <section class="sections">
-                <header class="section_title">
-                    <h2>Portfolio</h2>
-                    <i class="las la-briefcase"></i>
-                </header>
-    
-                <article class="articles container_projects">
-                    <div class="projects">
-                        <header class="projects_img">
-                            <img src="img/portfolio/project1.png" alt="Project 1" title="Project 1">
-                            <h3>My Portfolio</h3>
-                        </header>
-                        <div class="projects_content">
-                            <p>I created my portfolio from scratch, using just my own knowlegdes.</p>
-                            <div class="projects_technologies">
-                                <h4>Used technologies</h4>
-                                <img src="img/resume/skills/frontend/html5.svg" alt="HTML5" title="HTML 5">
-                                <img src="img/resume/skills/frontend/css3.svg" alt="CSS3" title="CSS3">
-                                <img src="img/resume/skills/frontend/js.svg" alt="Javascript" title="Javascript">
-                            </div>
-                            <div class="projects_buttons">
-                                <a href="https://jaimenavarrete123.github.io/personal-portfolio/" class="main" target="_blank">View site</a>
-                                <a href="https://github.com/jaimenavarrete123/personal-portfolio" target="_blank">View code</a>
-                            </div>
+                    <article class="articles">
+                        <h3 class="article_title">Social Networks</h3>
+                        <div class="social_networks">
+                            <a href="#" class="linkedin"
+                                ><i class="lab la-linkedin-in"></i
+                            ></a>
+                            <a href="#" class="github"
+                                ><i class="lab la-github"></i
+                            ></a>
+                            <a href="#" class="facebook"
+                                ><i class="lab la-facebook-f"></i
+                            ></a>
+                            <a href="#" class="twitter"
+                                ><i class="lab la-twitter"></i
+                            ></a>
                         </div>
-                    </div>
-                    <div class="projects">
-                        <header class="projects_img">
-                            <img src="img/portfolio/project4.jpg" alt="Project 1" title="Project 1">
-                            <h3>Project 2</h3>
-                        </header>
-                        <div class="projects_content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="projects_technologies">
-                                <h4>Used technologies</h4>
-                                <img src="img/resume/skills/frontend/html5.svg" alt="HTML5" title="HTML 5">
-                                <img src="img/resume/skills/frontend/css3.svg" alt="CSS3" title="CSS3">
-                                <img src="img/resume/skills/frontend/js.svg" alt="Javascript" title="Javascript">
-                            </div>
-                            <div class="projects_buttons">
-                                <a href="#" class="main">View site</a>
-                                <a href="#">View code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects">
-                        <header class="projects_img">
-                            <img src="img/portfolio/project4.jpg" alt="Project 1" title="Project 1">
-                            <h3>Project 3</h3>
-                        </header>
-                        <div class="projects_content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="projects_technologies">
-                                <h4>Used technologies</h4>
-                                <img src="img/resume/skills/frontend/html5.svg" alt="HTML5" title="HTML 5">
-                                <img src="img/resume/skills/frontend/css3.svg" alt="CSS3" title="CSS3">
-                                <img src="img/resume/skills/frontend/js.svg" alt="Javascript" title="Javascript">
-                            </div>
-                            <div class="projects_buttons">
-                                <a href="#" class="main">View site</a>
-                                <a href="#">View code</a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </div>
+                    </article>
 
+                    <article class="articles">
+                        <h3 class="article_title">Send me a message</h3>
+                        <form class="contact_form">
+                            <div class="form_input">
+                                <!-- <label for="input_name">Nombre</label>  -->
+                                <input
+                                    type="text"
+                                    id="input_name"
+                                    placeholder="Name"
+                                />
+                            </div>
+                            <div class="form_input">
+                                <!-- <label for="input_email">Email</label> -->
+                                <input
+                                    type="email"
+                                    id="input_email"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div class="form_input">
+                                <!-- <label for="input_email">Message</label> -->
+                                <textarea
+                                    id="input_message"
+                                    rows="7"
+                                    placeholder="Message"
+                                ></textarea>
+                            </div>
+                            <div class="form_input">
+                                <input
+                                    type="submit"
+                                    id="send_message"
+                                    value="Send message"
+                                />
+                            </div>
+                        </form>
+                    </article>
+                </section>
+            </div>
+        </main>
 
-        <div id="contact" class="container_contact">
-            <section class="sections">
-                <header class="section_title">
-                    <h2>Contact</h2>
-                    <i class="lar la-envelope"></i>
-                </header>
-    
-                <article class="articles">
-                    <h3 class="article_title">Social Networks</h3>
-                    <div class="social_networks">
-                        <a href="#" class="linkedin"><i class="lab la-linkedin-in"></i></a>
-                        <a href="#" class="github"><i class="lab la-github"></i></a>
-                        <a href="#" class="facebook"><i class="lab la-facebook-f"></i></a>
-                        <a href="#" class="twitter"><i class="lab la-twitter"></i></a>
-                    </div>
-                </article>
-    
-                <article class="articles">
-                    <h3 class="article_title">Send me a message</h3>
-                    <form class="contact_form">
-                        <div class="form_input">
-                            <!-- <label for="input_name">Nombre</label>  -->
-                            <input type="text" id="input_name" placeholder="Name">                       
-                        </div>
-                        <div class="form_input">
-                            <!-- <label for="input_email">Email</label> -->
-                            <input type="email" id="input_email" placeholder="Email">
-                        </div>
-                        <div class="form_input">
-                            <!-- <label for="input_email">Message</label> -->
-                            <textarea id="input_message" rows="7" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form_input">
-                            <input type="submit" id="send_message" value="Send message">
-                        </div>
-                    </form>
-                </article>
-            </section>
-        </div>
+        <footer class="footer">
+            <small>2020 © Jaime Navarrete. All Right Reserved.</small>
+        </footer>
 
-    </main>
-
-    <footer class="footer">
-        <small>2020 © Jaime Navarrete. All Right Reserved.</small>
-    </footer>
-
-    <script src="js/scripts.js"></script>
-</body>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

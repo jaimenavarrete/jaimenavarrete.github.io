@@ -23,16 +23,16 @@ the initial information and the main image
     position: relative;
     z-index: 1;
 
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 }
 
 .wrapper_header::before {
     content: '';
 
-    background: hsla(0,0%,11%,1);
+    background: hsla(0, 0%, 11%, 1);
     height: 100%;
     width: 100%;
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 
     position: absolute;
     left: 0;
@@ -41,7 +41,7 @@ the initial information and the main image
 
 .main_header {
     margin: 0 auto;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,12 +54,11 @@ the initial information and the main image
  ************* HEADER *************
  **********************************/
 
-
 .header_container {
     position: fixed;
     z-index: 1;
 
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 
     width: 100%;
 }
@@ -81,7 +80,7 @@ the initial information and the main image
     justify-content: space-between;
     align-items: center;
 
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 }
 
 .main_header .main_title {
@@ -115,7 +114,7 @@ the initial information and the main image
     left: 100%;
     top: 100%;
 
-    transition: .2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .main_header .bar_navigation_active {
@@ -134,7 +133,7 @@ the initial information and the main image
     display: block;
     padding: 1.5rem 0.62rem;
 
-    transition: .1s ease-out;
+    transition: 0.1s ease-out;
 }
 
 .main_header .bar_navigation ul li a:hover {
@@ -145,13 +144,12 @@ the initial information and the main image
     border-bottom-color: hsl(43, 97%, 61%);
 }
 
-
 /***********************************
  ******* INITIAL INFORMATION *******
  ***********************************/
 
 .initial_info {
-    color: hsl(0,0%,95%);
+    color: hsl(0, 0%, 95%);
     font-family: 'Work Sans';
     font-size: 1.5rem;
     line-height: 1.6;
@@ -161,18 +159,18 @@ the initial information and the main image
 
     opacity: 0.01;
     transform: translateY(-50%);
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 
     max-width: 75rem;
     width: 95%;
-} 
+}
 
 .initial_info strong {
     border-bottom: 3px solid hsl(43, 97%, 61%);
     display: inline-block;
     font-weight: bold;
-    padding-bottom: .5rem;
-    margin-bottom: .5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .initial_info h2 {
@@ -184,7 +182,7 @@ the initial information and the main image
 .initial_info p {
     font-size: 1.25rem;
 
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 }
 
 .initial_info .openInfo {
@@ -197,7 +195,7 @@ the initial information and the main image
 
 .initial_info .openInfo i {
     transform: rotate(0);
-    transition: .2s ease-out all;
+    transition: 0.2s ease-out all;
 }
 
 .initial_info .info {
@@ -209,36 +207,34 @@ the initial information and the main image
 }
 
 .initial_info .btn_contact,
-.contact_form .form_input input[type="submit"] {
+.contact_form .form_input input[type='submit'] {
     background: hsl(43, 97%, 61%);
     border: 3px solid hsl(43, 97%, 61%);
-    color: hsl(0,0%,17%);
+    color: hsl(0, 0%, 17%);
     cursor: pointer;
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 }
 
 .initial_info .btn_contact:hover,
-.contact_form .form_input input[type="submit"]:hover {
+.contact_form .form_input input[type='submit']:hover {
     border-color: hsl(43, 97%, 38%);
 }
 
 .initial_info .btn_contact:active,
-.contact_form .form_input input[type="submit"]:active {
+.contact_form .form_input input[type='submit']:active {
     background: hsl(43, 97%, 38%);
 }
-
 
 /**********************************
  ********** MAIN CONTENT **********
  **********************************/
-
 
 .sections {
     color: hsl(0, 0%, 95%);
@@ -253,7 +249,7 @@ the initial information and the main image
     color: hsl(43, 97%, 61%);
     font-size: 2.5rem;
     margin: 5rem 0 2.5rem 0;
-    padding: 0 1rem .5rem 1rem;
+    padding: 0 1rem 0.5rem 1rem;
     text-transform: uppercase;
 
     display: flex;
@@ -270,14 +266,13 @@ the initial information and the main image
     margin-bottom: 4rem;
 }
 
-
 /**********************************
  ************ ABOUT ME ************
  **********************************/
 
 .container_about_me {
     overflow: hidden;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
 
 .sections .articles .article_title {
@@ -305,10 +300,10 @@ the initial information and the main image
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
-    padding: .75rem 3rem;
+    padding: 0.75rem 3rem;
     text-decoration: none;
     text-transform: uppercase;
-    transition: .2s all ease-out;
+    transition: 0.2s all ease-out;
 }
 
 .sections .articles .btn_contact:hover {
@@ -335,17 +330,15 @@ the initial information and the main image
     padding: 1rem;
 }
 
-
 /**********************************
  ************* RESUME *************
  **********************************/
-
 
 /* EDUCATION AND EXPERIENCE */
 
 .container_resume {
     background: hsl(0, 0%, 11%);
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
 
 .container_resume .chronologies_container {
@@ -358,7 +351,7 @@ the initial information and the main image
     padding-left: 4rem;
     margin: 0 0 4rem 3rem;
     max-width: 540px;
-    
+
     position: relative;
 }
 
@@ -402,7 +395,7 @@ the initial information and the main image
 .container_resume .chronologies h4 {
     font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
     text-transform: uppercase;
 }
 
@@ -422,7 +415,7 @@ the initial information and the main image
 
 .container_resume .skills,
 .container_portfolio .projects {
-    background: hsl(0,0%, 17%);
+    background: hsl(0, 0%, 17%);
     box-shadow: 2px 2px 2px hsl(0, 0%, 30%);
     font-family: 'Crimson Text', sans-serif, Helvetica, Arial;
     margin: 0 auto;
@@ -443,13 +436,13 @@ the initial information and the main image
     color: hsl(43, 97%, 76%);
     font-family: 'Work Sans', sans-serif, helvetica, arial;
     font-size: 1.25rem;
-    margin: 1.5rem 0 .5rem 0;
+    margin: 1.5rem 0 0.5rem 0;
 }
 
 .container_resume .skills figure {
-    border-bottom: 2px solid hsl(0, 0%, 23%); 
+    border-bottom: 2px solid hsl(0, 0%, 23%);
     margin: 0;
-    padding: .25rem;
+    padding: 0.25rem;
 
     display: flex;
     justify-content: space-between;
@@ -464,15 +457,13 @@ the initial information and the main image
     margin: 0;
 }
 
-
 /**********************************
  *********** PORTFOLIO ************
  **********************************/
 
-
 .container_portfolio {
     background: hsl(0, 0%, 85%);
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
 
 .container_portfolio .section_title {
@@ -535,14 +526,13 @@ the initial information and the main image
     color: hsl(0, 0%, 17%);
 }
 
-
 /**********************************
  ************ CONTACT *************
  **********************************/
 
 .container_contact {
     overflow: hidden;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
 
 /* SOCIAL NETWORKS */
@@ -557,11 +547,11 @@ the initial information and the main image
     color: hsl(0, 0%, 90%);
     display: inline-block;
     margin-right: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     text-decoration: none;
 
-    transition: .2s ease-out all;
+    transition: 0.2s ease-out all;
 }
 
 .social_networks a i {
@@ -609,10 +599,10 @@ the initial information and the main image
     color: hsl(0, 0%, 95%);
     font-size: 1.25rem;
     outline: none;
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
     width: 100%;
 
-    transition: .2s ease-out all;
+    transition: 0.2s ease-out all;
 }
 
 .contact_form .form_input textarea {
@@ -630,35 +620,31 @@ the initial information and the main image
     color: hsl(0, 0%, 65%);
 }
 
-.contact_form .form_input input[type="submit"] {
+.contact_form .form_input input[type='submit'] {
     max-width: 235px;
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
 }
 
-.contact_form .form_input input[type="submit"]:focus {
+.contact_form .form_input input[type='submit']:focus {
     border-color: hsl(43, 97%, 38%);
     box-shadow: none;
 }
-
 
 /**********************************
  ************* FOOTER *************
  **********************************/
 
-
- .footer {
-    background: hsl(0,0%,11%);
-    color: hsl(0,0%,85%);
+.footer {
+    background: hsl(0, 0%, 11%);
+    color: hsl(0, 0%, 85%);
     font-family: 'Work Sans', sans-serif, Helvetica, Arial;
     padding: 1.5rem 0;
     text-align: center;
 }
 
-
 /***********************************
  ********** MEDIA QUERIES **********
  ***********************************/
-
 
 @media screen and (min-width: 768px) {
     /**********************************
@@ -718,7 +704,6 @@ the initial information and the main image
     }
 }
 
-
 @media screen and (min-width: 1075px) {
     html {
         font-size: 15px;
@@ -727,12 +712,10 @@ the initial information and the main image
     /***********************************
     ******* INITIAL INFORMATION *******
     ***********************************/
-    
 
     .initial_info {
-        padding: 10rem 0 5rem 0 ;
+        padding: 10rem 0 5rem 0;
     }
-
 
     /**********************************
     ************* HEADER *************
@@ -760,15 +743,14 @@ the initial information and the main image
         justify-content: space-between;
     }
 
-    .main_header .bar_navigation ul li a{
-        padding: .5rem;
+    .main_header .bar_navigation ul li a {
+        padding: 0.5rem;
         text-align: center;
     }
 
     .initial_info h2 {
         margin: 3rem 0;
     }
-
 
     /**********************************
     ************ ABOUT ME ************
@@ -796,7 +778,6 @@ the initial information and the main image
     }
 }
 
-
 @media screen and (min-width: 1200px) {
     html {
         font-size: 16px;
@@ -806,11 +787,10 @@ the initial information and the main image
     ******* INITIAL INFORMATION *******
     ***********************************/
 
-
     .initial_info .openInfo {
         display: none;
     }
-    
+
     .initial_info .info {
         position: static;
         display: block;
@@ -835,11 +815,9 @@ the initial information and the main image
         margin-bottom: 3em;
     }
 
-
     /**********************************
     ************* RESUME **************
     **********************************/
-
 
     /* SKILLS */
 
@@ -857,7 +835,6 @@ the initial information and the main image
     ************ CONTACT *************
     **********************************/
 
-    
     /* CONTACT FORM */
 
     .contact_form .form_input input,
