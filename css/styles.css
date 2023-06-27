@@ -451,7 +451,7 @@ the initial information and the main image
  **********************************/
 
 .container_portfolio {
-    background: hsl(0, 0%, 85%);
+    background: hsl(0, 0%, 80%);
     padding: 0.5rem 0;
 }
 
@@ -461,32 +461,36 @@ the initial information and the main image
 }
 
 .container_portfolio .projects {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
     color: hsl(0, 0%, 11%);
     padding: 0;
 }
 
-.container_portfolio .projects h3,
-.container_portfolio .projects h4 {
+.container_portfolio .projects h3 {
     color: hsl(0, 0%, 11%);
     font-weight: bold;
-    font-size: 2rem;
-    margin: 1.5rem;
+    font-size: 1.75rem;
+    margin: 1.25rem;
 }
 
-.container_portfolio .projects h4 {
-    color: hsl(0, 0%, 27%);
-    font-size: 1.25rem;
+.container_portfolio .projects_content {
+    padding: 0.75rem;
+    padding-top: 0;
+}
+
+.container_portfolio .projects_content p {
+    padding: 0;
 }
 
 .container_portfolio .projects_img img {
-    border-bottom: 2px solid hsl(0, 0%, 90%);
+    border-radius: 10px 10px 0 0;
     height: 225px;
     width: 100%;
 }
 
 .container_portfolio .projects_technologies {
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 .container_portfolio .projects_technologies img {
@@ -495,24 +499,21 @@ the initial information and the main image
 
 .container_portfolio .projects_buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container_portfolio .projects_buttons a {
-    border: 3px solid hsl(43, 97%, 38%);
-    color: hsl(43, 97%, 38%);
+    color: hsl(232, 15%, 19%);
     font-family: 'Work Sans', sans-serif, helvetica, arial;
+    font-size: 2.25rem;
     font-weight: bold;
-    display: inline-block;
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 0.25rem 1rem;
     text-decoration: none;
-    text-transform: uppercase;
+    transition: 0.2s all ease-out;
 }
 
-.container_portfolio .projects_buttons .main {
-    background: hsl(43, 97%, 61%);
-    color: hsl(0, 0%, 17%);
+.container_portfolio .projects_buttons a:hover {
+    color: hsl(232, 15%, 50%);
 }
 
 /**********************************
